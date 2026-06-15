@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>C9 研究生招生公告采集与证据问答平台</title>
+  <link rel="stylesheet" href="/static/admin.css?v=20260505-batch-source-delete">
+</head>
+<body>
+  <main class="main" style="max-width: 1100px; margin: 0 auto; padding: 32px 20px 48px;">
+    <header class="topbar" style="margin-bottom: 20px;">
+      <div>
+        <p class="eyebrow">C9 研究生招生 · 站内找源智能体 · 证据型问答</p>
+        <h1 style="margin: 0; font-size: 44px; line-height: 1.05;">C9 研招公告采集工作台</h1>
+        <p style="margin: 10px 0 0; font-size: 24px; font-weight: 700;">面向 C9 校级研究生招生公告的入口解析、站内找源、采集与证据问答演示</p>
+        <div id="system-status" class="note-list" style="margin-top: 12px;"></div>
+      </div>
+      <div class="topbar-actions">
+        <button class="ghost-btn" id="global-refresh-btn">刷新</button>
+        <a class="primary-link" href="/docs" target="_blank" rel="noreferrer">接口文档</a>
+      </div>
+    </header>
+
+    <div id="toast" class="toast"></div>
+
+    <section class="hero-panel" style="margin-bottom: 24px;">
+      <div>
+        <p class="eyebrow">你要的流程</p>
+        <h2 style="margin: 0 0 10px;">自然语言 -> 官方入口目录/健康 Source 复用 -> 站内找源 -> 候选排序/校验 -> 受控采集 -> 证据引用式问答</h2>
+        <p style="margin: 0;">例如：`提供C9高校研究生招生公告的真实数据源`、`采集清华大学研究生招生公告`、`总结已采集的研究生招生复试信息`。</p>
+      </div>
+    </section>
+
+    <section class="panel" style="margin-bottom: 24px;">
+      <div class="panel-head">
+        <h3>自然语言入口</h3>
+      </div>
+      <form id="nl-form" class="form-grid">
+        <label class="span-2">
+          <span>输入需求</span>
+          <textarea name="query" rows="6" placeholder="例如：采集清华大学研究生招生公告"></textarea>
+        </label>
+        <label class="span-2">
+          <span>站内入口 URL（可选，可覆盖官方入口目录）</span>
+          <input name="homepage_url" placeholder="例如：https://yz.tsinghua.edu.cn/">
+        </label>
+        <div class="form-actions span-2 triple-actions">
+          <button type="button" class="primary-btn" data-nl-action="execute">发现/采集 C9 研招公告</button>
+          <button type="button" class="ghost-btn" data-nl-action="ask">查询已采集数据</button>
+          <button type="button" class="ghost-btn" data-nl-action="parse">仅查看解析</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="panel" style="margin-bottom: 24px;">
+      <div class="panel-head">
+        <h3>执行结果</h3>
+      </div>
+      <div id="nl-result" class="detail-panel empty-state">这里会显示候选排序、失败原因、智能体轨迹、采集执行结果或查询结果。</div>
+    </section>
+
+    <section class="panel" style="margin-bottom: 24px;">
+      <div class="panel-head">
+        <h3>已保存数据源</h3>
+        <div class="item-actions">
+          <div id="sources-summary" class="item-meta"></div>
+          <button class="ghost-btn" id="sources-select-all-btn" type="button">全选</button>
+          <button class="ghost-btn danger-btn" id="sources-batch-delete-btn" type="button">删除选中</button>
+          <button class="inline-btn" id="sources-refresh-btn" type="button">刷新</button>
+        </div>
+      </div>
+      <div id="sources-list" class="stack-list empty-state">暂无已保存数据源。</div>
+    </section>
+
+    <section class="panel">
+      <div class="panel-head">
+        <h3>全部文档</h3>
+        <div id="documents-summary" class="item-meta"></div>
+        <button class="ghost-btn" id="documents-classify-btn">按大学分类</button>
+        <button class="inline-btn" id="documents-refresh-btn">刷新</button>
+      </div>
+      <div id="documents-groups" class="note-list" style="margin-bottom: 14px;"></div>
+      <div id="documents-list" class="stack-list empty-state">暂无文档。</div>
+    </section>
+  </main>
+
+  <script src="/static/admin.js?v=20260505-batch-source-delete"></script>
+</body>
+</html>

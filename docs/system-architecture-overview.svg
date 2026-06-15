@@ -1,0 +1,73 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .title { font: 700 42px "Microsoft YaHei", "PingFang SC", sans-serif; fill: #1f1f1f; }
+      .label { font: 700 28px "Microsoft YaHei", "PingFang SC", sans-serif; fill: #ffffff; }
+      .sub { font: 500 20px "Microsoft YaHei", "PingFang SC", sans-serif; fill: #dbe7f3; }
+      .note-title { font: 700 30px "Microsoft YaHei", "PingFang SC", sans-serif; fill: #1d4f7a; }
+      .note-text { font: 500 24px "Microsoft YaHei", "PingFang SC", sans-serif; fill: #404040; }
+      .footer { font: 600 26px "Microsoft YaHei", "PingFang SC", sans-serif; fill: #1f1f1f; }
+      .box { fill: #1f4e79; rx: 18; ry: 18; }
+      .assist { fill: #eaf2fb; stroke: #7ea6cc; stroke-width: 2; rx: 18; ry: 18; }
+      .arrow { stroke: #1f4e79; stroke-width: 4; fill: none; marker-end: url(#arrowhead); }
+      .dashed { stroke: #7ea6cc; stroke-width: 3; fill: none; stroke-dasharray: 10 8; marker-end: url(#arrowheadLight); }
+      .line { stroke: #d0d0d0; stroke-width: 2; }
+    </style>
+    <marker id="arrowhead" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 z" fill="#1f4e79"/>
+    </marker>
+    <marker id="arrowheadLight" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 z" fill="#7ea6cc"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="1600" height="900" fill="#ffffff"/>
+  <text x="80" y="88" class="title">系统架构总览</text>
+  <line x1="80" y1="118" x2="1520" y2="118" class="line"/>
+
+  <rect x="90" y="300" width="180" height="120" class="box"/>
+  <text x="180" y="352" text-anchor="middle" class="label">用户端</text>
+  <text x="180" y="388" text-anchor="middle" class="sub">管理页面</text>
+
+  <rect x="330" y="300" width="200" height="120" class="box"/>
+  <text x="430" y="352" text-anchor="middle" class="label">后端服务</text>
+  <text x="430" y="388" text-anchor="middle" class="sub">FastAPI + Uvicorn</text>
+
+  <rect x="590" y="300" width="180" height="120" class="box"/>
+  <text x="680" y="352" text-anchor="middle" class="label">任务编排</text>
+  <text x="680" y="388" text-anchor="middle" class="sub">任务创建与执行</text>
+
+  <rect x="830" y="300" width="200" height="120" class="box"/>
+  <text x="930" y="352" text-anchor="middle" class="label">网页采集</text>
+  <text x="930" y="388" text-anchor="middle" class="sub">requests / Playwright</text>
+
+  <rect x="1090" y="300" width="180" height="120" class="box"/>
+  <text x="1180" y="352" text-anchor="middle" class="label">内容抽取</text>
+  <text x="1180" y="388" text-anchor="middle" class="sub">规则 + LLM辅助</text>
+
+  <rect x="1330" y="300" width="190" height="120" class="box"/>
+  <text x="1425" y="352" text-anchor="middle" class="label">结果入库</text>
+  <text x="1425" y="388" text-anchor="middle" class="sub">SQLAlchemy + SQLite</text>
+
+  <path d="M270 360 L330 360" class="arrow"/>
+  <path d="M530 360 L590 360" class="arrow"/>
+  <path d="M770 360 L830 360" class="arrow"/>
+  <path d="M1030 360 L1090 360" class="arrow"/>
+  <path d="M1270 360 L1330 360" class="arrow"/>
+
+  <rect x="900" y="130" width="470" height="140" class="assist"/>
+  <text x="1120" y="190" text-anchor="middle" class="note-title">智能辅助模块</text>
+  <text x="1120" y="225" text-anchor="middle" class="note-text">SiliconFlow + DeepSeek</text>
+  <text x="1120" y="255" text-anchor="middle" class="note-text">自然语言解析 / 数据源筛选 / 抽取增强 / 摘要生成</text>
+
+  <path d="M980 270 L740 298" class="dashed"/>
+  <path d="M1180 270 L1180 298" class="dashed"/>
+
+  <text x="110" y="560" class="note-title">模块说明</text>
+  <text x="110" y="615" class="note-text">1. 用户通过管理页面发起采集请求，并查看处理结果。</text>
+  <text x="110" y="660" class="note-text">2. 后端服务接收请求后，由任务编排模块组织采集与处理流程。</text>
+  <text x="110" y="705" class="note-text">3. 网页采集模块负责获取页面内容，内容抽取模块负责生成结构化结果。</text>
+  <text x="110" y="750" class="note-text">4. 系统通过 SiliconFlow 接入 DeepSeek，在任务理解、数据源筛选、内容抽取和摘要生成等环节提供智能支持。</text>
+
+  <text x="800" y="830" text-anchor="middle" class="footer">系统主链路：用户端 -> 后端服务 -> 任务编排 -> 网页采集 -> 内容抽取 -> 结果入库</text>
+</svg>

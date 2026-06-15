@@ -1,0 +1,35 @@
+{
+  "name": "北京大学计算机学院通知公告",
+  "base_url": "https://cs.pku.edu.cn",
+  "site_type": "college",
+  "crawl_mode": "static",
+  "status": "active",
+  "config_json": {
+    "institution": "北京大学",
+    "department": "计算机学院",
+    "aliases": ["北大计算机学院", "北京大学计算机学院", "北大计算机"],
+    "engine": "legacy",
+    "list_pages": [
+      "https://cs.pku.edu.cn/xyxw/tzgg.htm"
+    ],
+    "list": {
+      "item_selector": "ul.list20 > li",
+      "title_selector": "h4",
+      "link_selector": "a",
+      "date_selector": ".time"
+    },
+    "detail": {
+      "title_selector": ".nav01 h3",
+      "publish_date_selector": ".nav01 .ll span",
+      "content_selector": "#vsb_content",
+      "attachment_selector": "#vsb_content a"
+    },
+    "scrapy": {
+      "concurrent_requests": 8,
+      "download_timeout_seconds": 20,
+      "obey_robots_txt": false
+    },
+    "schedule_hours": 6,
+    "hot_source": true
+  }
+}

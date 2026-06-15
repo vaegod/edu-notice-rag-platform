@@ -1,0 +1,35 @@
+{
+  "name": "示例高校计算机学院",
+  "base_url": "https://example.edu.cn",
+  "site_type": "college",
+  "crawl_mode": "static",
+  "status": "active",
+  "config_json": {
+    "institution": "示例大学",
+    "department": "计算机学院",
+    "aliases": ["示例大学", "示例学院"],
+    "engine": "legacy",
+    "list_pages": [
+      "https://example.edu.cn/list.html"
+    ],
+    "list": {
+      "item_selector": ".notice-item",
+      "title_selector": "a",
+      "link_selector": "a",
+      "date_selector": ".date"
+    },
+    "detail": {
+      "title_selector": "h1.notice-title",
+      "publish_date_selector": ".publish-date",
+      "content_selector": ".article",
+      "attachment_selector": ".article a"
+    },
+    "scrapy": {
+      "concurrent_requests": 8,
+      "download_timeout_seconds": 20,
+      "obey_robots_txt": false
+    },
+    "schedule_hours": 6,
+    "hot_source": true
+  }
+}

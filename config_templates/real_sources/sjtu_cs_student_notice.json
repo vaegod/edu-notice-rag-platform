@@ -1,0 +1,45 @@
+{
+  "name": "上海交通大学计算机学院学生事务通知",
+  "base_url": "https://www.cs.sjtu.edu.cn",
+  "site_type": "college",
+  "crawl_mode": "static",
+  "status": "active",
+  "config_json": {
+    "institution": "上海交通大学",
+    "department": "计算机学院",
+    "aliases": ["上海交大计算机学院", "上海交通大学计算机学院", "上海交大计算机"],
+    "engine": "legacy",
+    "list_pages": [
+      "https://www.cs.sjtu.edu.cn/active/ajax_type_list.html"
+    ],
+    "list": {
+      "request_method": "POST",
+      "request_data": {
+        "page": 1,
+        "cat_code": "xsgz-tzgg-xssw",
+        "type": "",
+        "search": "",
+        "extend_id": "0",
+        "template": "ajax_news_list1_search"
+      },
+      "response_json_key": "content",
+      "item_selector": "li",
+      "title_selector": ".tit",
+      "link_selector": "a",
+      "date_selector": ".time"
+    },
+    "detail": {
+      "title_selector": ".xw-cont .tit",
+      "publish_date_selector": ".xw-cont .jj p",
+      "content_selector": ".xw-cont .txt",
+      "attachment_selector": ".xw-cont .txt a"
+    },
+    "scrapy": {
+      "concurrent_requests": 8,
+      "download_timeout_seconds": 20,
+      "obey_robots_txt": false
+    },
+    "schedule_hours": 6,
+    "hot_source": true
+  }
+}

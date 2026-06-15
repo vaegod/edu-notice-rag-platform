@@ -1,0 +1,15 @@
+.git/
+.pytest_cache/
+.venv/
+.vscode/
+__pycache__/
+*.pyc
+*.db
+*.sqlite
+*.sqlite3
+*.db.bak
+*.bak
+*.log
+logs/
+tmp/
+.env

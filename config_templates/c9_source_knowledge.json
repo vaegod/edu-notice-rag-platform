@@ -1,0 +1,2822 @@
+{
+  "version": 1,
+  "generated_at": "2026-05-05T12:56:21.128009",
+  "scope": "graduate_admissions",
+  "universities": [
+    {
+      "university_name": "北京大学",
+      "normalized_name": "北京大学",
+      "scope": "graduate_admissions",
+      "official_homepage_url": "https://www.pku.edu.cn/",
+      "entrypoint_candidates": [
+        "https://admission.pku.edu.cn/index.htm"
+      ],
+      "selected_entrypoint_url": "https://admission.pku.edu.cn/index.htm",
+      "selected_source_url": "https://admission.pku.edu.cn/zsxx/sszs/zyml/2026/yx/zsml_ss_yx.html",
+      "source_title": "硕士研究生招生专业目录",
+      "source_kind": "list_page",
+      "candidate_type": "list_page",
+      "health_status": "healthy",
+      "confidence_score": 0.9,
+      "checked_at": "2026-05-05T12:54:21.578161",
+      "validation_evidence": {
+        "entrypoint_url": "https://admission.pku.edu.cn/index.htm",
+        "entrypoint_title": "北京大学研究生招生网",
+        "entrypoint_status_code": 200,
+        "raw_candidate_count": 128,
+        "featured_candidate_count": 128,
+        "candidate_track_counts": {
+          "graduate": 85,
+          "international": 1
+        },
+        "candidate_type_counts": {
+          "list_page": 31,
+          "channel_page": 10,
+          "site_home": 31,
+          "detail_page": 25,
+          "file_page": 31
+        },
+        "reject_reason_counts": {
+          "manual_confirmation_required": 15,
+          "validation_failed": 5
+        },
+        "top_results": [
+          {
+            "source_id": null,
+            "saved": false,
+            "validation_status": "valid",
+            "validation_message": null,
+            "university_name": "北京大学",
+            "collection_domain": "admissions_notice",
+            "homepage_url": "https://admission.pku.edu.cn/xxgk/xxgkssbm/index.htm",
+            "source_url": "https://ipr.pku.edu.cn/tzgg/2026-04-03/c6fb9af77af3431a9f4d1e1d9ec0c7e0.htm",
+            "source_title": "北京大学人口研究所2026年硕士招生拟录取公示 2026-04-05",
+            "source_kind": "list_page",
+            "admissions_levels": [
+              "graduate"
+            ],
+            "admissions_tracks": [
+              "graduate"
+            ],
+            "track": "graduate",
+            "candidate_type": "list_page",
+            "source_suitability_score": 100.0,
+            "topic_relevance_score": 88.0,
+            "reject_reason_code": "manual_confirmation_required",
+            "confidence_score": 100.0,
+            "reason": "北京大学人口研究所2026年硕士招生拟录取公示 2026-04-05",
+            "source_origin": null,
+            "health_status": null
+          },
+          {
+            "source_id": null,
+            "saved": false,
+            "validation_status": "valid",
+            "validation_message": null,
+            "university_name": "北京大学",
+            "collection_domain": "admissions_notice",
+            "homepage_url": "https://admission.pku.edu.cn/index.htm",
+            "source_url": "https://econ.pku.edu.cn/jxxm/zsxxfb_20211202144549787517/2c75c4ab924f4fed91694779881e51a0.htm",
+            "source_title": "北京大学经济学院2026年博士招生拟录取名单公示",
+            "source_kind": "list_page",
+            "admissions_levels": [
+              "graduate"
+            ],
+            "admissions_tracks": [
+              "graduate"
+            ],
+            "track": "graduate",
+            "candidate_type": "list_page",
+            "source_suitability_score": 100.0,
+            "topic_relevance_score": 76.0,
+            "reject_reason_code": "manual_confirmation_required",
+            "confidence_score": 100.0,
+            "reason": "北京大学经济学院2026年博士招生拟录取名单公示",
+            "source_origin": null,
+            "health_status": null
+          },
+          {
+            "source_id": null,
+            "saved": false,
+            "validation_status": "valid",
+            "validation_message": null,
+            "university_name": "北京大学",
+            "collection_domain": "admissions_notice",
+            "homepage_url": "https://admission.pku.edu.cn/index.htm",
+            "source_url": "https://future.pku.edu.cn/xwzk/543476ceb01a4ed9b264996d10e0a764.htm",
+            "source_title": "北京大学未来技术学院2026年“申请-考核制”学术型全日制博士招生拟录取公示名单（不含专项计划）",
+            "source_kind": "list_page",
+            "admissions_levels": [
+              "graduate"
+            ],
+            "admissions_tracks": [
+              "graduate"
+            ],
+            "track": "graduate",
+            "candidate_type": "list_page",
+            "source_suitability_score": 100.0,
+            "topic_relevance_score": 76.0,
+            "reject_reason_code": "manual_confirmation_required",
+            "confidence_score": 100.0,
+            "reason": "北京大学未来技术学院2026年“申请-考核制”学术型全日制博士招生拟录取公示名单（不含专项计划）",
+            "source_origin": null,
+            "health_status": null
+          },
+          {
+            "source_id": null,
+            "saved": false,
+            "validation_status": "valid",
+            "validation_message": null,
+            "university_name": "北京大学",
+            "collection_domain": "admissions_notice",
+            "homepage_url": "https://admission.pku.edu.cn/zsxx/sszs/index.htm",
+            "source_url": "https://admission.pku.edu.cn/zsxx/sszs/zyml/2026/yx/zsml_ss_yx.html",
+            "source_title": "北京大学2026年硕士研究生招生专业目录（校本部） 2025-10-10",
+            "source_kind": "list_page",
+            "admissions_levels": [
+              "graduate"
+            ],
+            "admissions_tracks": [
+              "graduate"
+            ],
+            "track": "graduate",
+            "candidate_type": "list_page",
+            "source_suitability_score": 100.0,
+            "topic_relevance_score": 60.0,
+            "reject_reason_code": "manual_confirmation_required",
+            "confidence_score": 100.0,
+            "reason": "北京大学2026年硕士研究生招生专业目录（校本部） 2025-10-10",
+            "source_origin": null,
+            "health_status": null
+          },
+          {
+            "source_id": null,
+            "saved": false,
+            "validation_status": "valid",
+            "validation_message": null,
+            "university_name": "北京大学",
+            "collection_domain": "admissions_notice",
+            "homepage_url": "https://admission.pku.edu.cn/zsxx/bszs/index.htm",
+            "source_url": "https://phil.pku.edu.cn/xwgg/tzgg/1f572ee026aa4956a7a713e8d91f89a6.htm",
+            "source_title": "北京大学哲学系2026年“申请-考核制”博士研究生招生说明 2025-10-20",
+            "source_kind": "list_page",
+            "admissions_levels": [
+              "graduate"
+            ],
+            "admissions_tracks": [
+              "graduate"
+            ],
+            "track": "graduate",
+            "candidate_type": "list_page",
+            "source_suitability_score": 100.0,
+            "topic_relevance_score": 60.0,
+            "reject_reason_code": "manual_confirmation_required",
+            "confidence_score": 100.0,
+            "reason": "北京大学哲学系2026年“申请-考核制”博士研究生招生说明 2025-10-20",
+            "source_origin": null,
+            "health_status": null
+          }
+        ],
+        "normalized_source": {
+          "name": "北京大学 硕士研究生招生专业目录",
+          "organization_name": "北京大学",
+          "source_type": "admissions_notice",
+          "collection_domain": "admissions_notice",
+          "source_origin": "discovered_by_agent",
+          "base_url": "https://admission.pku.edu.cn/zsxx/sszs/index.htm",
+          "start_urls_json": [
+            "https://admission.pku.edu.cn/zsxx/sszs/zyml/2026/yx/zsml_ss_yx.html"
+          ],
+          "site_type": "school",
+          "crawl_mode": "static",
+          "status": "active",
+          "onboarding_status": "validated",
+          "confidence_score": 0.0,
+          "entrypoint_url": "https://admission.pku.edu.cn/zsxx/sszs/index.htm",
+          "health_status": "healthy",
+          "last_discovered_at": "2026-05-05T12:54:26.211355",
+          "last_validated_at": "2026-05-05T12:54:26.211358",
+          "last_success_at": null,
+          "last_failure_reason": null,
+          "validation_evidence": {
+            "validation_issue_count": 0,
+            "resolved_source_url": "https://admission.pku.edu.cn/zsxx/sszs/zyml/2026/yx/zsml_ss_yx.html",
+            "entrypoint_url": "https://admission.pku.edu.cn/zsxx/sszs/index.htm"
+          },
+          "scope_json": {
+            "university_name": "北京大学",
+            "admissions_levels": [
+              "graduate"
+            ],
+            "admissions_tracks": [
+              "graduate"
+            ],
+            "selected_track": "graduate"
+          },
+          "resolver_meta_json": {
+            "reason": "北京大学2026年硕士研究生招生专业目录（校本部） 2025-10-10",
+            "confidence_score": 0.0,
+            "source_suitability_score": 100.0,
+            "topic_relevance_score": 60.0,
+            "resolved_at": "2026-05-05T12:54:26.211359",
+            "homepage_url": "https://admission.pku.edu.cn/zsxx/sszs/index.htm",
+            "source_url": "https://admission.pku.edu.cn/zsxx/sszs/zyml/2026/yx/zsml_ss_yx.html",
+            "source_kind": "list_page",
+            "candidate_type": "list_page",
+            "selected_track": "graduate",
+            "admissions_tracks": [
+              "graduate"
+            ],
+            "canonical_start_url_pattern": "https://admission.pku.edu.cn/zsxx/sszs/zyml/:id/yx/zsml_ss_yx.html"
+          },
+          "config_json": {
+            "collection_domain": "admissions_notice",
+            "institution": "北京大学",
+            "aliases": [
+              "北京大学"
+            ],
+            "source_kind": "list_page",
+            "resolver": "deepseek",
+            "source_title": "硕士研究生招生专业目录",
+            "reason": "北京大学2026年硕士研究生招生专业目录（校本部） 2025-10-10",
+            "list_page_mode": null,
+            "pagination_hint": null,
+            "detail_link_hint": null,
+            "list_pages": [
+              "https://admission.pku.edu.cn/zsxx/sszs/zyml/2026/yx/zsml_ss_yx.html"
+            ],
+            "list": {
+              "request_method": "GET",
+              "request_data": {},
+              "request_json": {},
+              "request_headers": {},
+              "item_selector": ".notice-item, .news-item, li, tr",
+              "title_selector": "a",
+              "link_selector": "a",
+              "date_selector": ".date, time, .time"
+            },
+            "detail": {
+              "title_selector": "h1, .title, .notice-title, .news-title",
+              "publish_date_selector": ".publish-date, .date, time",
+              "content_selector": ".article, article, .content, .main-content, .intro",
+              "attachment_selector": ".article a, article a, .content a, .main-content a"
+            },
+            "admissions_levels": [
+              "graduate"
+            ],
+            "admissions_tracks": [
+              "graduate"
+            ],
+            "selected_track": "graduate",
+            "candidate_type": "list_page",
+            "schedule_hours": 6,
+            "hot_source": true,
+            "probe_target": "admissions_notice",
+            "engine": "scrapy",
+            "render_mode": "dynamic",
+            "scrapy": {
+              "concurrent_requests": 8,
+              "download_timeout_seconds": 20,
+              "obey_robots_txt": false
+            },
+            "playwright": {
+              "enabled": true,
+              "wait_until": "networkidle",
+              "timeout_ms": 30000
+            }
+          }
+        },
+        "selected_candidate": {
+          "source_id": null,
+          "saved": false,
+          "validation_status": "valid",
+          "validation_message": null,
+          "university_name": "北京大学",
+          "collection_domain": "admissions_notice",
+          "homepage_url": "https://admission.pku.edu.cn/zsxx/sszs/index.htm",
+          "source_url": "https://admission.pku.edu.cn/zsxx/sszs/zyml/2026/yx/zsml_ss_yx.html",
+          "source_title": "硕士研究生招生专业目录",
+          "source_kind": "list_page",
+          "admissions_levels": [
+            "graduate"
+          ],
+          "admissions_tracks": [
+            "graduate"
+          ],
+          "track": "graduate",
+          "candidate_type": "list_page",
+          "source_suitability_score": 100.0,
+          "topic_relevance_score": 60.0,
+          "reject_reason_code": "manual_confirmation_required",
+          "confidence_score": 100.0,
+          "reason": "北京大学2026年硕士研究生招生专业目录（校本部） 2025-10-10",
+          "source_origin": null,
+          "health_status": null
+        },
+        "confidence_score": 0.9
+      },
+      "fallback_notes": []
+    },
+    {
+      "university_name": "清华大学",
+      "normalized_name": "清华大学",
+      "scope": "graduate_admissions",
+      "official_homepage_url": "https://www.tsinghua.edu.cn/",
+      "entrypoint_candidates": [
+        "https://yz.tsinghua.edu.cn/"
+      ],
+      "selected_entrypoint_url": "https://yz.tsinghua.edu.cn/",
+      "selected_source_url": "https://yz.tsinghua.edu.cn/zsxx/sszs/jzml.htm",
+      "source_title": "硕士招生简章",
+      "source_kind": "list_page",
+      "candidate_type": "list_page",
+      "health_status": "healthy",
+      "confidence_score": 0.9,
+      "checked_at": "2026-05-05T12:54:28.975947",
+      "validation_evidence": {
+        "entrypoint_url": "https://yz.tsinghua.edu.cn/",
+        "entrypoint_title": "清华研究生招生网",
+        "entrypoint_status_code": 200,
+        "raw_candidate_count": 134,
+        "featured_candidate_count": 134,
+        "candidate_track_counts": {
+          "graduate": 133
+        },
+        "candidate_type_counts": {
+          "list_page": 68,
+          "channel_page": 42,
+          "site_home": 2,
+          "detail_page": 22
+        },
+        "reject_reason_counts": {
+          "manual_confirmation_required": 19,
+          "validation_failed": 1
+        },
+        "top_results": [
+          {
+            "source_id": null,
+            "saved": false,
+            "validation_status": "valid",
+            "validation_message": null,
+            "university_name": "清华大学",
+            "collection_domain": "admissions_notice",
+            "homepage_url": "https://yzbm.tsinghua.edu.cn/publish/infors",
+            "source_url": "https://yzbm.tsinghua.edu.cn/publish/s01/s0101/list",
+            "source_title": "推免招生",
+            "source_kind": "list_page",
+            "admissions_levels": [
+              "graduate"
+            ],
+            "admissions_tracks": [
+              "graduate"
+            ],
+            "track": "graduate",
+            "candidate_type": "list_page",
+            "source_suitability_score": 100.0,
+            "topic_relevance_score": 64.0,
+            "reject_reason_code": "manual_confirmation_required",
+            "confidence_score": 100.0,
+            "reason": "推免招生",
+            "source_origin": null,
+            "health_status": null
+          },
+          {
+            "source_id": null,
+            "saved": false,
+            "validation_status": "valid",
+            "validation_message": null,
+            "university_name": "清华大学",
+            "collection_domain": "admissions_notice",
+            "homepage_url": "https://yz.tsinghua.edu.cn/",
+            "source_url": "https://yz.tsinghua.edu.cn/zsxx/sszs/jzml.htm",
+            "source_title": "招生信息 Admissions",
+            "source_kind": "list_page",
+            "admissions_levels": [
+              "graduate"
+            ],
+            "admissions_tracks": [
+              "graduate"
+            ],
+            "track": "graduate",
+            "candidate_type": "list_page",
+            "source_suitability_score": 100.0,
+            "topic_relevance_score": 52.0,
+            "reject_reason_code": "manual_confirmation_required",
+            "confidence_score": 100.0,
+            "reason": "招生信息 Admissions",
+            "source_origin": null,
+            "health_status": null
+          },
+          {
+            "source_id": null,
+            "saved": false,
+            "validation_status": "valid",
+            "validation_message": null,
+            "university_name": "清华大学",
+            "collection_domain": "admissions_notice",
+            "homepage_url": "https://yz.tsinghua.edu.cn/",
+            "source_url": "https://yz.tsinghua.edu.cn/zsxx/bszs/jzml.htm",
+            "source_title": "博士招生",
+            "source_kind": "list_page",
+            "admissions_levels": [
+              "graduate"
+            ],
+            "admissions_tracks": [
+              "graduate"
+            ],
+            "track": "graduate",
+            "candidate_type": "list_page",
+            "source_suitability_score": 100.0,
+            "topic_relevance_score": 52.0,
+            "reject_reason_code": "manual_confirmation_required",
+            "confidence_score": 100.0,
+            "reason": "博士招生",
+            "source_origin": null,
+            "health_status": null
+          },
+          {
+            "source_id": null,
+            "saved": false,
+            "validation_status": "valid",
+            "validation_message": null,
+            "university_name": "清华大学",
+            "collection_domain": "admissions_notice",
+            "homepage_url": "https://yz.tsinghua.edu.cn/",
+            "source_url": "https://yz.tsinghua.edu.cn/zsxx/gatzs/tzgg1.htm",
+            "source_title": "港澳台招生",
+            "source_kind": "list_page",
+            "admissions_levels": [
+              "graduate"
+            ],
+            "admissions_tracks": [
+              "graduate"
+            ],
+            "track": "graduate",
+            "candidate_type": "list_page",
+            "source_suitability_score": 100.0,
+            "topic_relevance_score": 52.0,
+            "reject_reason_code": "manual_confirmation_required",
+            "confidence_score": 100.0,
+            "reason": "港澳台招生",
+            "source_origin": null,
+            "health_status": null
+          },
+          {
+            "source_id": null,
+            "saved": false,
+            "validation_status": "valid",
+            "validation_message": null,
+            "university_name": "清华大学",
+            "collection_domain": "admissions_notice",
+            "homepage_url": "https://yz.tsinghua.edu.cn/",
+            "source_url": "https://yz.tsinghua.edu.cn/zsxx/gjxs/tzgg.htm",
+            "source_title": "国际招生",
+            "source_kind": "list_page",
+            "admissions_levels": [
+              "graduate"
+            ],
+            "admissions_tracks": [
+              "graduate"
+            ],
+            "track": "graduate",
+            "candidate_type": "list_page",
+            "source_suitability_score": 100.0,
+            "topic_relevance_score": 52.0,
+            "reject_reason_code": "manual_confirmation_required",
+            "confidence_score": 100.0,
+            "reason": "国际招生",
+            "source_origin": null,
+            "health_status": null
+          }
+        ],
+        "normalized_source": {
+          "name": "清华大学 硕士招生简章",
+          "organization_name": "清华大学",
+          "source_type": "admissions_notice",
+          "collection_domain": "admissions_notice",
+          "source_origin": "discovered_by_agent",
+          "base_url": "https://yz.tsinghua.edu.cn/",
+          "start_urls_json": [
+            "https://yz.tsinghua.edu.cn/zsxx/sszs/jzml.htm"
+          ],
+          "site_type": "school",
+          "crawl_mode": "static",
+          "status": "active",
+          "onboarding_status": "validated",
+          "confidence_score": 0.0,
+          "entrypoint_url": "https://yz.tsinghua.edu.cn/",
+          "health_status": "healthy",
+          "last_discovered_at": "2026-05-05T12:54:30.091077",
+          "last_validated_at": "2026-05-05T12:54:30.091095",
+          "last_success_at": null,
+          "last_failure_reason": null,
+          "validation_evidence": {
+            "validation_issue_count": 0,
+            "resolved_source_url": "https://yz.tsinghua.edu.cn/zsxx/sszs/jzml.htm",
+            "entrypoint_url": "https://yz.tsinghua.edu.cn/"
+          },
+          "scope_json": {
+            "university_name": "清华大学",
+            "admissions_levels": [
+              "graduate"
+            ],
+            "admissions_tracks": [
+              "graduate"
+            ],
+            "selected_track": "graduate"
+          },
+          "resolver_meta_json": {
+            "reason": "招生信息 Admissions",
+            "confidence_score": 0.0,
+            "source_suitability_score": 100.0,
+            "topic_relevance_score": 52.0,
+            "resolved_at": "2026-05-05T12:54:30.091096",
+            "homepage_url": "https://yz.tsinghua.edu.cn/",
+            "source_url": "https://yz.tsinghua.edu.cn/zsxx/sszs/jzml.htm",
+            "source_kind": "list_page",
+            "candidate_type": "list_page",
+            "selected_track": "graduate",
+            "admissions_tracks": [
+              "graduate"
+            ],
+            "canonical_start_url_pattern": "https://yz.tsinghua.edu.cn/zsxx/sszs/jzml.htm"
+          },
+          "config_json": {
+            "collection_domain": "admissions_notice",
+            "institution": "清华大学",
+            "aliases": [
+              "清华大学"
+            ],
+            "source_kind": "list_page",
+            "resolver": "deepseek",
+            "source_title": "硕士招生简章",
+            "reason": "招生信息 Admissions",
+            "list_page_mode": null,
+            "pagination_hint": null,
+            "detail_link_hint": null,
+            "list_pages": [
+              "https://yz.tsinghua.edu.cn/zsxx/sszs/jzml.htm"
+            ],
+            "list": {
+              "request_method": "GET",
+              "request_data": {},
+              "request_json": {},
+              "request_headers": {},
+              "item_selector": ".notice-item, .news-item, li, tr",
+              "title_selector": "a",
+              "link_selector": "a",
+              "date_selector": ".date, time, .time"
+            },
+            "detail": {
+              "title_selector": "h1, .title, .notice-title, .news-title",
+              "publish_date_selector": ".publish-date, .date, time",
+              "content_selector": ".article, article, .content, .main-content, .intro",
+              "attachment_selector": ".article a, article a, .content a, .main-content a"
+            },
+            "admissions_levels": [
+              "graduate"
+            ],
+            "admissions_tracks": [
+              "graduate"
+            ],
+            "selected_track": "graduate",
+            "candidate_type": "list_page",
+            "schedule_hours": 6,
+            "hot_source": true,
+            "probe_target": "admissions_notice",
+            "engine": "scrapy",
+            "render_mode": "dynamic",
+            "scrapy": {
+              "concurrent_requests": 8,
+              "download_timeout_seconds": 20,
+              "obey_robots_txt": false
+            },
+            "playwright": {
+              "enabled": true,
+              "wait_until": "networkidle",
+              "timeout_ms": 30000
+            }
+          }
+        },
+        "selected_candidate": {
+          "source_id": null,
+          "saved": false,
+          "validation_status": "valid",
+          "validation_message": null,
+          "university_name": "清华大学",
+          "collection_domain": "admissions_notice",
+          "homepage_url": "https://yz.tsinghua.edu.cn/",
+          "source_url": "https://yz.tsinghua.edu.cn/zsxx/sszs/jzml.htm",
+          "source_title": "硕士招生简章",
+          "source_kind": "list_page",
+          "admissions_levels": [
+            "graduate"
+          ],
+          "admissions_tracks": [
+            "graduate"
+          ],
+          "track": "graduate",
+          "candidate_type": "list_page",
+          "source_suitability_score": 100.0,
+          "topic_relevance_score": 52.0,
+          "reject_reason_code": "manual_confirmation_required",
+          "confidence_score": 100.0,
+          "reason": "招生信息 Admissions",
+          "source_origin": null,
+          "health_status": null
+        },
+        "confidence_score": 0.9
+      },
+      "fallback_notes": []
+    },
+    {
+      "university_name": "复旦大学",
+      "normalized_name": "复旦大学",
+      "scope": "graduate_admissions",
+      "official_homepage_url": "https://www.fudan.edu.cn/",
+      "entrypoint_candidates": [
+        "https://gsao.fudan.edu.cn/"
+      ],
+      "selected_entrypoint_url": "https://gsao.fudan.edu.cn/",
+      "selected_source_url": "https://gsao.fudan.edu.cn/15004/list.htm",
+      "source_title": "招生信息",
+      "source_kind": "list_page",
+      "candidate_type": "list_page",
+      "health_status": "healthy",
+      "confidence_score": 0.9,
+      "checked_at": "2026-05-05T12:54:31.099973",
+      "validation_evidence": {
+        "entrypoint_url": "https://gsao.fudan.edu.cn/",
+        "entrypoint_title": "复旦大学研究生招生网",
+        "entrypoint_status_code": 200,
+        "raw_candidate_count": 22,
+        "featured_candidate_count": 22,
+        "candidate_track_counts": {
+          "graduate": 14
+        },
+        "candidate_type_counts": {
+          "list_page": 10,
+          "site_home": 1,
+          "detail_page": 9,
+          "file_page": 2
+        },
+        "reject_reason_counts": {
+          "manual_confirmation_required": 10,
+          "fetch_failed": 1,
+          "detail_page_rejected": 8,
+          "file_page_rejected": 1
+        },
+        "top_results": [
+          {
+            "source_id": null,
+            "saved": false,
+            "validation_status": "valid",
+            "validation_message": null,
+            "university_name": "复旦大学",
+            "collection_domain": "admissions_notice",
+            "homepage_url": "https://gsao.fudan.edu.cn/",
+            "source_url": "https://gsao.fudan.edu.cn/ssyjszszcwzszymlwfslqbf/list.htm",
+            "source_title": "招生章程、目录、复试录取及调剂工作办法",
+            "source_kind": "list_page",
+            "admissions_levels": [
+              "graduate"
+            ],
+            "admissions_tracks": [
+              "graduate"
+            ],
+            "track": "graduate",
+            "candidate_type": "list_page",
+            "source_suitability_score": 100.0,
+            "topic_relevance_score": 76.0,
+            "reject_reason_code": "manual_confirmation_required",
+            "confidence_score": 100.0,
+            "reason": "招生章程、目录、复试录取及调剂工作办法",
+            "source_origin": null,
+            "health_status": null
+          },
+          {
+            "source_id": null,
+            "saved": false,
+            "validation_status": "valid",
+            "validation_message": null,
+            "university_name": "复旦大学",
+            "collection_domain": "admissions_notice",
+            "homepage_url": "https://gsao.fudan.edu.cn/",
+            "source_url": "https://gsao.fudan.edu.cn/15004/list.htm",
+            "source_title": "硕士招生",
+            "source_kind": "list_page",
+            "admissions_levels": [
+              "graduate"
+            ],
+            "admissions_tracks": [
+              "graduate"
+            ],
+            "track": "graduate",
+            "candidate_type": "list_page",
+            "source_suitability_score": 100.0,
+            "topic_relevance_score": 52.0,
+            "reject_reason_code": "manual_confirmation_required",
+            "confidence_score": 100.0,
+            "reason": "硕士招生",
+            "source_origin": null,
+            "health_status": null
+          },
+          {
+            "source_id": null,
+            "saved": false,
+            "validation_status": "valid",
+            "validation_message": null,
+            "university_name": "复旦大学",
+            "collection_domain": "admissions_notice",
+            "homepage_url": "https://gsao.fudan.edu.cn/",
+            "source_url": "https://gsao.fudan.edu.cn/15005/list.htm",
+            "source_title": "博士招生",
+            "source_kind": "list_page",
+            "admissions_levels": [
+              "graduate"
+            ],
+            "admissions_tracks": [
+              "graduate"
+            ],
+            "track": "graduate",
+            "candidate_type": "list_page",
+            "source_suitability_score": 100.0,
+            "topic_relevance_score": 52.0,
+            "reject_reason_code": "manual_confirmation_required",
+            "confidence_score": 100.0,
+            "reason": "博士招生",
+            "source_origin": null,
+            "health_status": null
+          },
+          {
+            "source_id": null,
+            "saved": false,
+            "validation_status": "valid",
+            "validation_message": null,
+            "university_name": "复旦大学",
+            "collection_domain": "admissions_notice",
+            "homepage_url": "https://gsao.fudan.edu.cn/",
+            "source_url": "https://gsao.fudan.edu.cn/15029/list.htm",
+            "source_title": "招生动态",
+            "source_kind": "list_page",
+            "admissions_levels": [
+              "graduate"
+            ],
+            "admissions_tracks": [
+              "graduate"
+            ],
+            "track": "graduate",
+            "candidate_type": "list_page",
+            "source_suitability_score": 91.0,
+            "topic_relevance_score": 24.0,
+            "reject_reason_code": "manual_confirmation_required",
+            "confidence_score": 91.0,
+            "reason": "招生动态",
+            "source_origin": null,
+            "health_status": null
+          },
+          {
+            "source_id": null,
+            "saved": false,
+            "validation_status": "valid",
+            "validation_message": null,
+            "university_name": "复旦大学",
+            "collection_domain": "admissions_notice",
+            "homepage_url": "https://gsao.fudan.edu.cn/",
+            "source_url": "https://gsao.fudan.edu.cn/15157/list.htm",
+            "source_title": "招生动态",
+            "source_kind": "list_page",
+            "admissions_levels": [
+              "graduate"
+            ],
+            "admissions_tracks": [
+              "graduate"
+            ],
+            "track": "graduate",
+            "candidate_type": "list_page",
+            "source_suitability_score": 91.0,
+            "topic_relevance_score": 24.0,
+            "reject_reason_code": "manual_confirmation_required",
+            "confidence_score": 91.0,
+            "reason": "招生动态",
+            "source_origin": null,
+            "health_status": null
+          }
+        ],
+        "normalized_source": {
+          "name": "复旦大学 招生信息",
+          "organization_name": "复旦大学",
+          "source_type": "admissions_notice",
+          "collection_domain": "admissions_notice",
+          "source_origin": "discovered_by_agent",
+          "base_url": "https://gsao.fudan.edu.cn/",
+          "start_urls_json": [
+            "https://gsao.fudan.edu.cn/15004/list.htm"
+          ],
+          "site_type": "school",
+          "crawl_mode": "static",
+          "status": "active",
+          "onboarding_status": "validated",
+          "confidence_score": 0.0,
+          "entrypoint_url": "https://gsao.fudan.edu.cn/",
+          "health_status": "healthy",
+          "last_discovered_at": "2026-05-05T12:54:32.191935",
+          "last_validated_at": "2026-05-05T12:54:32.191939",
+          "last_success_at": null,
+          "last_failure_reason": null,
+          "validation_evidence": {
+            "validation_issue_count": 0,
+            "resolved_source_url": "https://gsao.fudan.edu.cn/15004/list.htm",
+            "entrypoint_url": "https://gsao.fudan.edu.cn/"
+          },
+          "scope_json": {
+            "university_name": "复旦大学",
+            "admissions_levels": [
+              "graduate"
+            ],
+            "admissions_tracks": [
+              "graduate"
+            ],
+            "selected_track": "graduate"
+          },
+          "resolver_meta_json": {
+            "reason": "硕士招生",
+            "confidence_score": 0.0,
+            "source_suitability_score": 100.0,
+            "topic_relevance_score": 52.0,
+            "resolved_at": "2026-05-05T12:54:32.191940",
+            "homepage_url": "https://gsao.fudan.edu.cn/",
+            "source_url": "https://gsao.fudan.edu.cn/15004/list.htm",
+            "source_kind": "list_page",
+            "candidate_type": "list_page",
+            "selected_track": "graduate",
+            "admissions_tracks": [
+              "graduate"
+            ],
+            "canonical_start_url_pattern": "https://gsao.fudan.edu.cn/:id/list.htm"
+          },
+          "config_json": {
+            "collection_domain": "admissions_notice",
+            "institution": "复旦大学",
+            "aliases": [
+              "复旦大学"
+            ],
+            "source_kind": "list_page",
+            "resolver": "deepseek",
+            "source_title": "招生信息",
+            "reason": "硕士招生",
+            "list_page_mode": null,
+            "pagination_hint": null,
+            "detail_link_hint": null,
+            "list_pages": [
+              "https://gsao.fudan.edu.cn/15004/list.htm"
+            ],
+            "list": {
+              "request_method": "GET",
+              "request_data": {},
+              "request_json": {},
+              "request_headers": {},
+              "item_selector": ".notice-item, .news-item, li, tr",
+              "title_selector": "a",
+              "link_selector": "a",
+              "date_selector": ".date, time, .time"
+            },
+            "detail": {
+              "title_selector": "h1, .title, .notice-title, .news-title",
+              "publish_date_selector": ".publish-date, .date, time",
+              "content_selector": ".article, article, .content, .main-content, .intro",
+              "attachment_selector": ".article a, article a, .content a, .main-content a"
+            },
+            "admissions_levels": [
+              "graduate"
+            ],
+            "admissions_tracks": [
+              "graduate"
+            ],
+            "selected_track": "graduate",
+            "candidate_type": "list_page",
+            "schedule_hours": 6,
+            "hot_source": true,
+            "probe_target": "admissions_notice",
+            "engine": "scrapy",
+            "render_mode": "dynamic",
+            "scrapy": {
+              "concurrent_requests": 8,
+              "download_timeout_seconds": 20,
+              "obey_robots_txt": false
+            },
+            "playwright": {
+              "enabled": true,
+              "wait_until": "networkidle",
+              "timeout_ms": 30000
+            }
+          }
+        },
+        "selected_candidate": {
+          "source_id": null,
+          "saved": false,
+          "validation_status": "valid",
+          "validation_message": null,
+          "university_name": "复旦大学",
+          "collection_domain": "admissions_notice",
+          "homepage_url": "https://gsao.fudan.edu.cn/",
+          "source_url": "https://gsao.fudan.edu.cn/15004/list.htm",
+          "source_title": "招生信息",
+          "source_kind": "list_page",
+          "admissions_levels": [
+            "graduate"
+          ],
+          "admissions_tracks": [
+            "graduate"
+          ],
+          "track": "graduate",
+          "candidate_type": "list_page",
+          "source_suitability_score": 100.0,
+          "topic_relevance_score": 52.0,
+          "reject_reason_code": "manual_confirmation_required",
+          "confidence_score": 100.0,
+          "reason": "硕士招生",
+          "source_origin": null,
+          "health_status": null
+        },
+        "confidence_score": 0.9
+      },
+      "fallback_notes": []
+    },
+    {
+      "university_name": "上海交通大学",
+      "normalized_name": "上海交通大学",
+      "scope": "graduate_admissions",
+      "official_homepage_url": "https://www.sjtu.edu.cn/",
+      "entrypoint_candidates": [
+        "https://yzb.sjtu.edu.cn/"
+      ],
+      "selected_entrypoint_url": "https://yzb.sjtu.edu.cn/",
+      "selected_source_url": "https://yzb.sjtu.edu.cn/zkxx/sszs",
+      "source_title": "硕士招生",
+      "source_kind": "list_page",
+      "candidate_type": "list_page",
+      "health_status": "healthy",
+      "confidence_score": 0.9,
+      "checked_at": "2026-05-05T12:54:38.608173",
+      "validation_evidence": {
+        "entrypoint_url": "https://yzb.sjtu.edu.cn/",
+        "entrypoint_title": "首页 - 上海交通大学研究生招生网",
+        "entrypoint_status_code": 200,
+        "raw_candidate_count": 73,
+        "featured_candidate_count": 73,
+        "candidate_track_counts": {
+          "graduate": 73
+        },
+        "candidate_type_counts": {
+          "list_page": 8,
+          "channel_page": 21,
+          "site_home": 1,
+          "detail_page": 43
+        },
+        "reject_reason_counts": {
+          "manual_confirmation_required": 8,
+          "entry_page_rejected": 12
+        },
+        "top_results": [
+          {
+            "source_id": null,
+            "saved": false,
+            "validation_status": "valid",
+            "validation_message": null,
+            "university_name": "上海交通大学",
+            "collection_domain": "admissions_notice",
+            "homepage_url": "https://yzb.sjtu.edu.cn/",
+            "source_url": "https://yzb.sjtu.edu.cn/zsjz/bsszs",
+            "source_title": "招生简章",
+            "source_kind": "list_page",
+            "admissions_levels": [
+              "graduate"
+            ],
+            "admissions_tracks": [
+              "graduate"
+            ],
+            "track": "graduate",
+            "candidate_type": "list_page",
+            "source_suitability_score": 100.0,
+            "topic_relevance_score": 64.0,
+            "reject_reason_code": "manual_confirmation_required",
+            "confidence_score": 100.0,
+            "reason": "招生简章",
+            "source_origin": null,
+            "health_status": null
+          },
+          {
+            "source_id": null,
+            "saved": false,
+            "validation_status": "valid",
+            "validation_message": null,
+            "university_name": "上海交通大学",
+            "collection_domain": "admissions_notice",
+            "homepage_url": "https://yzb.sjtu.edu.cn/",
+            "source_url": "https://yzb.sjtu.edu.cn/zkxx/sszs",
+            "source_title": "硕士招生",
+            "source_kind": "list_page",
+            "admissions_levels": [
+              "graduate"
+            ],
+            "admissions_tracks": [
+              "graduate"
+            ],
+            "track": "graduate",
+            "candidate_type": "list_page",
+            "source_suitability_score": 100.0,
+            "topic_relevance_score": 52.0,
+            "reject_reason_code": "manual_confirmation_required",
+            "confidence_score": 100.0,
+            "reason": "硕士招生",
+            "source_origin": null,
+            "health_status": null
+          },
+          {
+            "source_id": null,
+            "saved": false,
+            "validation_status": "valid",
+            "validation_message": null,
+            "university_name": "上海交通大学",
+            "collection_domain": "admissions_notice",
+            "homepage_url": "https://yzb.sjtu.edu.cn/",
+            "source_url": "https://yzb.sjtu.edu.cn/zkxx/yxdt",
+            "source_title": "院系动态",
+            "source_kind": "list_page",
+            "admissions_levels": [
+              "graduate"
+            ],
+            "admissions_tracks": [
+              "graduate"
+            ],
+            "track": "graduate",
+            "candidate_type": "list_page",
+            "source_suitability_score": 100.0,
+            "topic_relevance_score": 52.0,
+            "reject_reason_code": "manual_confirmation_required",
+            "confidence_score": 100.0,
+            "reason": "院系动态",
+            "source_origin": null,
+            "health_status": null
+          },
+          {
+            "source_id": null,
+            "saved": false,
+            "validation_status": "valid",
+            "validation_message": null,
+            "university_name": "上海交通大学",
+            "collection_domain": "admissions_notice",
+            "homepage_url": "https://yzb.sjtu.edu.cn/",
+            "source_url": "https://yzb.sjtu.edu.cn/zsjz/sszs",
+            "source_title": "硕士生招生",
+            "source_kind": "list_page",
+            "admissions_levels": [
+              "graduate"
+            ],
+            "admissions_tracks": [
+              "graduate"
+            ],
+            "track": "graduate",
+            "candidate_type": "list_page",
+            "source_suitability_score": 100.0,
+            "topic_relevance_score": 52.0,
+            "reject_reason_code": "manual_confirmation_required",
+            "confidence_score": 100.0,
+            "reason": "硕士生招生",
+            "source_origin": null,
+            "health_status": null
+          },
+          {
+            "source_id": null,
+            "saved": false,
+            "validation_status": "valid",
+            "validation_message": null,
+            "university_name": "上海交通大学",
+            "collection_domain": "admissions_notice",
+            "homepage_url": "https://yzb.sjtu.edu.cn/",
+            "source_url": "https://yzb.sjtu.edu.cn/kjrk/bszs",
+            "source_title": "博士",
+            "source_kind": "list_page",
+            "admissions_levels": [
+              "graduate"
+            ],
+            "admissions_tracks": [
+              "graduate"
+            ],
+            "track": "graduate",
+            "candidate_type": "list_page",
+            "source_suitability_score": 100.0,
+            "topic_relevance_score": 40.0,
+            "reject_reason_code": "manual_confirmation_required",
+            "confidence_score": 100.0,
+            "reason": "博士",
+            "source_origin": null,
+            "health_status": null
+          }
+        ],
+        "normalized_source": {
+          "name": "上海交通大学 硕士招生",
+          "organization_name": "上海交通大学",
+          "source_type": "admissions_notice",
+          "collection_domain": "admissions_notice",
+          "source_origin": "discovered_by_agent",
+          "base_url": "https://yzb.sjtu.edu.cn/",
+          "start_urls_json": [
+            "https://yzb.sjtu.edu.cn/zkxx/sszs"
+          ],
+          "site_type": "school",
+          "crawl_mode": "static",
+          "status": "active",
+          "onboarding_status": "validated",
+          "confidence_score": 0.0,
+          "entrypoint_url": "https://yzb.sjtu.edu.cn/",
+          "health_status": "healthy",
+          "last_discovered_at": "2026-05-05T12:54:42.945392",
+          "last_validated_at": "2026-05-05T12:54:42.945396",
+          "last_success_at": null,
+          "last_failure_reason": null,
+          "validation_evidence": {
+            "validation_issue_count": 0,
+            "resolved_source_url": "https://yzb.sjtu.edu.cn/zkxx/sszs",
+            "entrypoint_url": "https://yzb.sjtu.edu.cn/"
+          },
+          "scope_json": {
+            "university_name": "上海交通大学",
+            "admissions_levels": [
+              "graduate"
+            ],
+            "admissions_tracks": [
+              "graduate"
+            ],
+            "selected_track": "graduate"
+          },
+          "resolver_meta_json": {
+            "reason": "硕士招生",
+            "confidence_score": 0.0,
+            "source_suitability_score": 100.0,
+            "topic_relevance_score": 52.0,
+            "resolved_at": "2026-05-05T12:54:42.945398",
+            "homepage_url": "https://yzb.sjtu.edu.cn/",
+            "source_url": "https://yzb.sjtu.edu.cn/zkxx/sszs",
+            "source_kind": "list_page",
+            "candidate_type": "list_page",
+            "selected_track": "graduate",
+            "admissions_tracks": [
+              "graduate"
+            ],
+            "canonical_start_url_pattern": "https://yzb.sjtu.edu.cn/zkxx/sszs"
+          },
+          "config_json": {
+            "collection_domain": "admissions_notice",
+            "institution": "上海交通大学",
+            "aliases": [
+              "上海交通大学"
+            ],
+            "source_kind": "list_page",
+            "resolver": "deepseek",
+            "source_title": "硕士招生",
+            "reason": "硕士招生",
+            "list_page_mode": null,
+            "pagination_hint": null,
+            "detail_link_hint": null,
+            "list_pages": [
+              "https://yzb.sjtu.edu.cn/zkxx/sszs"
+            ],
+            "list": {
+              "request_method": "GET",
+              "request_data": {},
+              "request_json": {},
+              "request_headers": {},
+              "item_selector": ".notice-item, .news-item, li, tr",
+              "title_selector": "a",
+              "link_selector": "a",
+              "date_selector": ".date, time, .time"
+            },
+            "detail": {
+              "title_selector": "h1, .title, .notice-title, .news-title",
+              "publish_date_selector": ".publish-date, .date, time",
+              "content_selector": ".article, article, .content, .main-content, .intro",
+              "attachment_selector": ".article a, article a, .content a, .main-content a"
+            },
+            "admissions_levels": [
+              "graduate"
+            ],
+            "admissions_tracks": [
+              "graduate"
+            ],
+            "selected_track": "graduate",
+            "candidate_type": "list_page",
+            "schedule_hours": 6,
+            "hot_source": true,
+            "probe_target": "admissions_notice",
+            "engine": "scrapy",
+            "render_mode": "dynamic",
+            "scrapy": {
+              "concurrent_requests": 8,
+              "download_timeout_seconds": 20,
+              "obey_robots_txt": false
+            },
+            "playwright": {
+              "enabled": true,
+              "wait_until": "networkidle",
+              "timeout_ms": 30000
+            }
+          }
+        },
+        "selected_candidate": {
+          "source_id": null,
+          "saved": false,
+          "validation_status": "valid",
+          "validation_message": null,
+          "university_name": "上海交通大学",
+          "collection_domain": "admissions_notice",
+          "homepage_url": "https://yzb.sjtu.edu.cn/",
+          "source_url": "https://yzb.sjtu.edu.cn/zkxx/sszs",
+          "source_title": "硕士招生",
+          "source_kind": "list_page",
+          "admissions_levels": [
+            "graduate"
+          ],
+          "admissions_tracks": [
+            "graduate"
+          ],
+          "track": "graduate",
+          "candidate_type": "list_page",
+          "source_suitability_score": 100.0,
+          "topic_relevance_score": 52.0,
+          "reject_reason_code": "manual_confirmation_required",
+          "confidence_score": 100.0,
+          "reason": "硕士招生",
+          "source_origin": null,
+          "health_status": null
+        },
+        "confidence_score": 0.9
+      },
+      "fallback_notes": []
+    },
+    {
+      "university_name": "浙江大学",
+      "normalized_name": "浙江大学",
+      "scope": "graduate_admissions",
+      "official_homepage_url": "https://www.zju.edu.cn/",
+      "entrypoint_candidates": [
+        "https://www.grs.zju.edu.cn/yjszs/",
+        "http://www.grs.zju.edu.cn/yjszs/"
+      ],
+      "selected_entrypoint_url": "http://www.grs.zju.edu.cn/yjszs/",
+      "selected_source_url": "http://www.grs.zju.edu.cn/yjszs/28465/list.htm",
+      "source_title": "招生信息",
+      "source_kind": "list_page",
+      "candidate_type": "list_page",
+      "health_status": "healthy",
+      "confidence_score": 0.9,
+      "checked_at": "2026-05-05T12:54:48.298813",
+      "validation_evidence": {
+        "entrypoint_url": "http://www.grs.zju.edu.cn/yjszs/",
+        "entrypoint_title": "浙江大学研究生招生网",
+        "entrypoint_status_code": 200,
+        "raw_candidate_count": 37,
+        "featured_candidate_count": 37,
+        "candidate_track_counts": {
+          "graduate": 15,
+          "international": 2
+        },
+        "candidate_type_counts": {
+          "list_page": 17,
+          "channel_page": 5,
+          "detail_page": 15
+        },
+        "reject_reason_counts": {
+          "manual_confirmation_required": 17,
+          "entry_page_rejected": 3
+        },
+        "top_results": [
+          {
+            "source_id": null,
+            "saved": false,
+            "validation_status": "valid",
+            "validation_message": null,
+            "university_name": "浙江大学",
+            "collection_domain": "admissions_notice",
+            "homepage_url": "http://www.grs.zju.edu.cn/yjszs/",
+            "source_url": "http://www.grs.zju.edu.cn/yjszs/28504/list.htm",
+            "source_title": "招生简章",
+            "source_kind": "list_page",
+            "admissions_levels": [
+              "graduate"
+            ],
+            "admissions_tracks": [
+              "graduate"
+            ],
+            "track": "graduate",
+            "candidate_type": "list_page",
+            "source_suitability_score": 100.0,
+            "topic_relevance_score": 64.0,
+            "reject_reason_code": "manual_confirmation_required",
+            "confidence_score": 100.0,
+            "reason": "招生简章",
+            "source_origin": null,
+            "health_status": null
+          },
+          {
+            "source_id": null,
+            "saved": false,
+            "validation_status": "valid",
+            "validation_message": null,
+            "university_name": "浙江大学",
+            "collection_domain": "admissions_notice",
+            "homepage_url": "http://www.grs.zju.edu.cn/yjszs/",
+            "source_url": "http://yjsy.zju.edu.cn/bszs/public/custom/enrolmentSystem?zsnf=2026&type=pb",
+            "source_title": "2025-10-11 2026年浙江大学普通招考和硕博连读博士研究生招生专业目录",
+            "source_kind": "list_page",
+            "admissions_levels": [
+              "graduate"
+            ],
+            "admissions_tracks": [
+              "graduate"
+            ],
+            "track": "graduate",
+            "candidate_type": "list_page",
+            "source_suitability_score": 100.0,
+            "topic_relevance_score": 60.0,
+            "reject_reason_code": "manual_confirmation_required",
+            "confidence_score": 100.0,
+            "reason": "2025-10-11 2026年浙江大学普通招考和硕博连读博士研究生招生专业目录",
+            "source_origin": null,
+            "health_status": null
+          },
+          {
+            "source_id": null,
+            "saved": false,
+            "validation_status": "valid",
+            "validation_message": null,
+            "university_name": "浙江大学",
+            "collection_domain": "admissions_notice",
+            "homepage_url": "http://www.grs.zju.edu.cn/yjszs/",
+            "source_url": "https://yjsy.zju.edu.cn/open/zsss/ZsssGatList?zsnf=2026",
+            "source_title": "2025-12-17 浙江大学2026年面向香港、澳门、台湾地区招收博士研究生招生专...",
+            "source_kind": "list_page",
+            "admissions_levels": [
+              "graduate"
+            ],
+            "admissions_tracks": [
+              "graduate"
+            ],
+            "track": "graduate",
+            "candidate_type": "list_page",
+            "source_suitability_score": 100.0,
+            "topic_relevance_score": 60.0,
+            "reject_reason_code": "manual_confirmation_required",
+            "confidence_score": 100.0,
+            "reason": "2025-12-17 浙江大学2026年面向香港、澳门、台湾地区招收博士研究生招生专...",
+            "source_origin": null,
+            "health_status": null
+          },
+          {
+            "source_id": null,
+            "saved": false,
+            "validation_status": "valid",
+            "validation_message": null,
+            "university_name": "浙江大学",
+            "collection_domain": "admissions_notice",
+            "homepage_url": "http://www.grs.zju.edu.cn/yjszs/",
+            "source_url": "http://www.grs.zju.edu.cn/yjszs/28465/list.htm",
+            "source_title": "招生信息",
+            "source_kind": "list_page",
+            "admissions_levels": [
+              "graduate"
+            ],
+            "admissions_tracks": [
+              "graduate"
+            ],
+            "track": "graduate",
+            "candidate_type": "list_page",
+            "source_suitability_score": 100.0,
+            "topic_relevance_score": 52.0,
+            "reject_reason_code": "manual_confirmation_required",
+            "confidence_score": 100.0,
+            "reason": "招生信息",
+            "source_origin": null,
+            "health_status": null
+          },
+          {
+            "source_id": null,
+            "saved": false,
+            "validation_status": "valid",
+            "validation_message": null,
+            "university_name": "浙江大学",
+            "collection_domain": "admissions_notice",
+            "homepage_url": "http://www.grs.zju.edu.cn/yjszs/",
+            "source_url": "http://www.grs.zju.edu.cn/yjszs/28470/list.htm",
+            "source_title": "硕士招生",
+            "source_kind": "list_page",
+            "admissions_levels": [
+              "graduate"
+            ],
+            "admissions_tracks": [
+              "graduate"
+            ],
+            "track": "graduate",
+            "candidate_type": "list_page",
+            "source_suitability_score": 100.0,
+            "topic_relevance_score": 52.0,
+            "reject_reason_code": "manual_confirmation_required",
+            "confidence_score": 100.0,
+            "reason": "硕士招生",
+            "source_origin": null,
+            "health_status": null
+          }
+        ],
+        "normalized_source": {
+          "name": "浙江大学 招生信息",
+          "organization_name": "浙江大学",
+          "source_type": "admissions_notice",
+          "collection_domain": "admissions_notice",
+          "source_origin": "discovered_by_agent",
+          "base_url": "http://www.grs.zju.edu.cn/yjszs/",
+          "start_urls_json": [
+            "http://www.grs.zju.edu.cn/yjszs/28465/list.htm"
+          ],
+          "site_type": "school",
+          "crawl_mode": "static",
+          "status": "active",
+          "onboarding_status": "validated",
+          "confidence_score": 0.0,
+          "entrypoint_url": "http://www.grs.zju.edu.cn/yjszs/",
+          "health_status": "healthy",
+          "last_discovered_at": "2026-05-05T12:55:12.889539",
+          "last_validated_at": "2026-05-05T12:55:12.889542",
+          "last_success_at": null,
+          "last_failure_reason": null,
+          "validation_evidence": {
+            "validation_issue_count": 0,
+            "resolved_source_url": "http://www.grs.zju.edu.cn/yjszs/28465/list.htm",
+            "entrypoint_url": "http://www.grs.zju.edu.cn/yjszs/"
+          },
+          "scope_json": {
+            "university_name": "浙江大学",
+            "admissions_levels": [
+              "graduate"
+            ],
+            "admissions_tracks": [
+              "graduate"
+            ],
+            "selected_track": "graduate"
+          },
+          "resolver_meta_json": {
+            "reason": "招生信息",
+            "confidence_score": 0.0,
+            "source_suitability_score": 100.0,
+            "topic_relevance_score": 52.0,
+            "resolved_at": "2026-05-05T12:55:12.889543",
+            "homepage_url": "http://www.grs.zju.edu.cn/yjszs/",
+            "source_url": "http://www.grs.zju.edu.cn/yjszs/28465/list.htm",
+            "source_kind": "list_page",
+            "candidate_type": "list_page",
+            "selected_track": "graduate",
+            "admissions_tracks": [
+              "graduate"
+            ],
+            "canonical_start_url_pattern": "http://www.grs.zju.edu.cn/yjszs/:id/list.htm"
+          },
+          "config_json": {
+            "collection_domain": "admissions_notice",
+            "institution": "浙江大学",
+            "aliases": [
+              "浙江大学"
+            ],
+            "source_kind": "list_page",
+            "resolver": "deepseek",
+            "source_title": "招生信息",
+            "reason": "招生信息",
+            "list_page_mode": null,
+            "pagination_hint": null,
+            "detail_link_hint": null,
+            "list_pages": [
+              "http://www.grs.zju.edu.cn/yjszs/28465/list.htm"
+            ],
+            "list": {
+              "request_method": "GET",
+              "request_data": {},
+              "request_json": {},
+              "request_headers": {},
+              "item_selector": ".notice-item, .news-item, li, tr",
+              "title_selector": "a",
+              "link_selector": "a",
+              "date_selector": ".date, time, .time"
+            },
+            "detail": {
+              "title_selector": "h1, .title, .notice-title, .news-title",
+              "publish_date_selector": ".publish-date, .date, time",
+              "content_selector": ".article, article, .content, .main-content, .intro",
+              "attachment_selector": ".article a, article a, .content a, .main-content a"
+            },
+            "admissions_levels": [
+              "graduate"
+            ],
+            "admissions_tracks": [
+              "graduate"
+            ],
+            "selected_track": "graduate",
+            "candidate_type": "list_page",
+            "schedule_hours": 6,
+            "hot_source": true,
+            "probe_target": "admissions_notice",
+            "engine": "scrapy",
+            "render_mode": "dynamic",
+            "scrapy": {
+              "concurrent_requests": 8,
+              "download_timeout_seconds": 20,
+              "obey_robots_txt": false
+            },
+            "playwright": {
+              "enabled": true,
+              "wait_until": "networkidle",
+              "timeout_ms": 30000
+            }
+          }
+        },
+        "selected_candidate": {
+          "source_id": null,
+          "saved": false,
+          "validation_status": "valid",
+          "validation_message": null,
+          "university_name": "浙江大学",
+          "collection_domain": "admissions_notice",
+          "homepage_url": "http://www.grs.zju.edu.cn/yjszs/",
+          "source_url": "http://www.grs.zju.edu.cn/yjszs/28465/list.htm",
+          "source_title": "招生信息",
+          "source_kind": "list_page",
+          "admissions_levels": [
+            "graduate"
+          ],
+          "admissions_tracks": [
+            "graduate"
+          ],
+          "track": "graduate",
+          "candidate_type": "list_page",
+          "source_suitability_score": 100.0,
+          "topic_relevance_score": 52.0,
+          "reject_reason_code": "manual_confirmation_required",
+          "confidence_score": 100.0,
+          "reason": "招生信息",
+          "source_origin": null,
+          "health_status": null
+        },
+        "confidence_score": 0.9
+      },
+      "fallback_notes": [
+        "https://www.grs.zju.edu.cn/yjszs/ 不可访问。"
+      ]
+    },
+    {
+      "university_name": "南京大学",
+      "normalized_name": "南京大学",
+      "scope": "graduate_admissions",
+      "official_homepage_url": "https://www.nju.edu.cn/",
+      "entrypoint_candidates": [
+        "https://yzb.nju.edu.cn/"
+      ],
+      "selected_entrypoint_url": "https://yzb.nju.edu.cn/",
+      "selected_source_url": "https://yzb.nju.edu.cn/47831/list.htm",
+      "source_title": "招生信息",
+      "source_kind": "list_page",
+      "candidate_type": "list_page",
+      "health_status": "healthy",
+      "confidence_score": 0.9,
+      "checked_at": "2026-05-05T12:55:16.910792",
+      "validation_evidence": {
+        "entrypoint_url": "https://yzb.nju.edu.cn/",
+        "entrypoint_title": "研究生招生网",
+        "entrypoint_status_code": 200,
+        "raw_candidate_count": 48,
+        "featured_candidate_count": 48,
+        "candidate_track_counts": {
+          "graduate": 47,
+          "international": 1
+        },
+        "candidate_type_counts": {
+          "list_page": 24,
+          "channel_page": 4,
+          "site_home": 2,
+          "detail_page": 18
+        },
+        "reject_reason_counts": {
+          "manual_confirmation_required": 20
+        },
+        "top_results": [
+          {
+            "source_id": null,
+            "saved": false,
+            "validation_status": "valid",
+            "validation_message": null,
+            "university_name": "南京大学",
+            "collection_domain": "admissions_notice",
+            "homepage_url": "https://yzb.nju.edu.cn/",
+            "source_url": "https://yzb.nju.edu.cn/xlyxx/list.htm",
+            "source_title": "夏令营/推免",
+            "source_kind": "list_page",
+            "admissions_levels": [
+              "graduate"
+            ],
+            "admissions_tracks": [
+              "graduate"
+            ],
+            "track": "graduate",
+            "candidate_type": "list_page",
+            "source_suitability_score": 100.0,
+            "topic_relevance_score": 64.0,
+            "reject_reason_code": "manual_confirmation_required",
+            "confidence_score": 100.0,
+            "reason": "夏令营/推免",
+            "source_origin": null,
+            "health_status": null
+          },
+          {
+            "source_id": null,
+            "saved": false,
+            "validation_status": "valid",
+            "validation_message": null,
+            "university_name": "南京大学",
+            "collection_domain": "admissions_notice",
+            "homepage_url": "https://yzb.nju.edu.cn/",
+            "source_url": "https://yzb.nju.edu.cn/47831/list.htm",
+            "source_title": "招生信息",
+            "source_kind": "list_page",
+            "admissions_levels": [
+              "graduate"
+            ],
+            "admissions_tracks": [
+              "graduate"
+            ],
+            "track": "graduate",
+            "candidate_type": "list_page",
+            "source_suitability_score": 100.0,
+            "topic_relevance_score": 52.0,
+            "reject_reason_code": "manual_confirmation_required",
+            "confidence_score": 100.0,
+            "reason": "招生信息",
+            "source_origin": null,
+            "health_status": null
+          },
+          {
+            "source_id": null,
+            "saved": false,
+            "validation_status": "valid",
+            "validation_message": null,
+            "university_name": "南京大学",
+            "collection_domain": "admissions_notice",
+            "homepage_url": "https://yzb.nju.edu.cn/",
+            "source_url": "https://yzb.nju.edu.cn/47840/list.htm",
+            "source_title": "硕士招生",
+            "source_kind": "list_page",
+            "admissions_levels": [
+              "graduate"
+            ],
+            "admissions_tracks": [
+              "graduate"
+            ],
+            "track": "graduate",
+            "candidate_type": "list_page",
+            "source_suitability_score": 100.0,
+            "topic_relevance_score": 52.0,
+            "reject_reason_code": "manual_confirmation_required",
+            "confidence_score": 100.0,
+            "reason": "硕士招生",
+            "source_origin": null,
+            "health_status": null
+          },
+          {
+            "source_id": null,
+            "saved": false,
+            "validation_status": "valid",
+            "validation_message": null,
+            "university_name": "南京大学",
+            "collection_domain": "admissions_notice",
+            "homepage_url": "https://yzb.nju.edu.cn/",
+            "source_url": "https://yzb.nju.edu.cn/47862/list.htm",
+            "source_title": "简章目录",
+            "source_kind": "list_page",
+            "admissions_levels": [
+              "graduate"
+            ],
+            "admissions_tracks": [
+              "graduate"
+            ],
+            "track": "graduate",
+            "candidate_type": "list_page",
+            "source_suitability_score": 100.0,
+            "topic_relevance_score": 52.0,
+            "reject_reason_code": "manual_confirmation_required",
+            "confidence_score": 100.0,
+            "reason": "简章目录",
+            "source_origin": null,
+            "health_status": null
+          },
+          {
+            "source_id": null,
+            "saved": false,
+            "validation_status": "valid",
+            "validation_message": null,
+            "university_name": "南京大学",
+            "collection_domain": "admissions_notice",
+            "homepage_url": "https://yzb.nju.edu.cn/",
+            "source_url": "https://yzb.nju.edu.cn/47863/list.htm",
+            "source_title": "硕士最新通知",
+            "source_kind": "list_page",
+            "admissions_levels": [
+              "graduate"
+            ],
+            "admissions_tracks": [
+              "graduate"
+            ],
+            "track": "graduate",
+            "candidate_type": "list_page",
+            "source_suitability_score": 100.0,
+            "topic_relevance_score": 52.0,
+            "reject_reason_code": "manual_confirmation_required",
+            "confidence_score": 100.0,
+            "reason": "硕士最新通知",
+            "source_origin": null,
+            "health_status": null
+          }
+        ],
+        "normalized_source": {
+          "name": "南京大学 招生信息",
+          "organization_name": "南京大学",
+          "source_type": "admissions_notice",
+          "collection_domain": "admissions_notice",
+          "source_origin": "discovered_by_agent",
+          "base_url": "https://yzb.nju.edu.cn/",
+          "start_urls_json": [
+            "https://yzb.nju.edu.cn/47831/list.htm"
+          ],
+          "site_type": "school",
+          "crawl_mode": "static",
+          "status": "active",
+          "onboarding_status": "validated",
+          "confidence_score": 0.0,
+          "entrypoint_url": "https://yzb.nju.edu.cn/",
+          "health_status": "healthy",
+          "last_discovered_at": "2026-05-05T12:55:24.263204",
+          "last_validated_at": "2026-05-05T12:55:24.263213",
+          "last_success_at": null,
+          "last_failure_reason": null,
+          "validation_evidence": {
+            "validation_issue_count": 0,
+            "resolved_source_url": "https://yzb.nju.edu.cn/47831/list.htm",
+            "entrypoint_url": "https://yzb.nju.edu.cn/"
+          },
+          "scope_json": {
+            "university_name": "南京大学",
+            "admissions_levels": [
+              "graduate"
+            ],
+            "admissions_tracks": [
+              "graduate"
+            ],
+            "selected_track": "graduate"
+          },
+          "resolver_meta_json": {
+            "reason": "招生信息",
+            "confidence_score": 0.0,
+            "source_suitability_score": 100.0,
+            "topic_relevance_score": 52.0,
+            "resolved_at": "2026-05-05T12:55:24.263215",
+            "homepage_url": "https://yzb.nju.edu.cn/",
+            "source_url": "https://yzb.nju.edu.cn/47831/list.htm",
+            "source_kind": "list_page",
+            "candidate_type": "list_page",
+            "selected_track": "graduate",
+            "admissions_tracks": [
+              "graduate"
+            ],
+            "canonical_start_url_pattern": "https://yzb.nju.edu.cn/:id/list.htm"
+          },
+          "config_json": {
+            "collection_domain": "admissions_notice",
+            "institution": "南京大学",
+            "aliases": [
+              "南京大学"
+            ],
+            "source_kind": "list_page",
+            "resolver": "deepseek",
+            "source_title": "招生信息",
+            "reason": "招生信息",
+            "list_page_mode": null,
+            "pagination_hint": null,
+            "detail_link_hint": null,
+            "list_pages": [
+              "https://yzb.nju.edu.cn/47831/list.htm"
+            ],
+            "list": {
+              "request_method": "GET",
+              "request_data": {},
+              "request_json": {},
+              "request_headers": {},
+              "item_selector": ".notice-item, .news-item, li, tr",
+              "title_selector": "a",
+              "link_selector": "a",
+              "date_selector": ".date, time, .time"
+            },
+            "detail": {
+              "title_selector": "h1, .title, .notice-title, .news-title",
+              "publish_date_selector": ".publish-date, .date, time",
+              "content_selector": ".article, article, .content, .main-content, .intro",
+              "attachment_selector": ".article a, article a, .content a, .main-content a"
+            },
+            "admissions_levels": [
+              "graduate"
+            ],
+            "admissions_tracks": [
+              "graduate"
+            ],
+            "selected_track": "graduate",
+            "candidate_type": "list_page",
+            "schedule_hours": 6,
+            "hot_source": true,
+            "probe_target": "admissions_notice",
+            "engine": "scrapy",
+            "render_mode": "dynamic",
+            "scrapy": {
+              "concurrent_requests": 8,
+              "download_timeout_seconds": 20,
+              "obey_robots_txt": false
+            },
+            "playwright": {
+              "enabled": true,
+              "wait_until": "networkidle",
+              "timeout_ms": 30000
+            }
+          }
+        },
+        "selected_candidate": {
+          "source_id": null,
+          "saved": false,
+          "validation_status": "valid",
+          "validation_message": null,
+          "university_name": "南京大学",
+          "collection_domain": "admissions_notice",
+          "homepage_url": "https://yzb.nju.edu.cn/",
+          "source_url": "https://yzb.nju.edu.cn/47831/list.htm",
+          "source_title": "招生信息",
+          "source_kind": "list_page",
+          "admissions_levels": [
+            "graduate"
+          ],
+          "admissions_tracks": [
+            "graduate"
+          ],
+          "track": "graduate",
+          "candidate_type": "list_page",
+          "source_suitability_score": 100.0,
+          "topic_relevance_score": 52.0,
+          "reject_reason_code": "manual_confirmation_required",
+          "confidence_score": 100.0,
+          "reason": "招生信息",
+          "source_origin": null,
+          "health_status": null
+        },
+        "confidence_score": 0.9
+      },
+      "fallback_notes": [
+        "https://yzb.nju.edu.cn/ 使用 crawl4ai 静态回退抓取成功。"
+      ]
+    },
+    {
+      "university_name": "中国科学技术大学",
+      "normalized_name": "中国科学技术大学",
+      "scope": "graduate_admissions",
+      "official_homepage_url": "https://www.ustc.edu.cn/",
+      "entrypoint_candidates": [
+        "https://yz.ustc.edu.cn/"
+      ],
+      "selected_entrypoint_url": "https://yz.ustc.edu.cn/",
+      "selected_source_url": "https://yz.ustc.edu.cn/column/182?num=-1",
+      "source_title": "通知公告",
+      "source_kind": "list_page",
+      "candidate_type": "list_page",
+      "health_status": "healthy",
+      "confidence_score": 0.9,
+      "checked_at": "2026-05-05T12:56:12.365396",
+      "validation_evidence": {
+        "entrypoint_url": "https://yz.ustc.edu.cn/",
+        "entrypoint_title": "中国科学技术大学-研究生招生在线",
+        "entrypoint_status_code": 200,
+        "raw_candidate_count": 8,
+        "featured_candidate_count": 8,
+        "candidate_track_counts": {
+          "graduate": 8
+        },
+        "candidate_type_counts": {
+          "list_page": 8
+        },
+        "reject_reason_counts": {
+          "manual_confirmation_required": 8
+        },
+        "top_results": [
+          {
+            "source_id": null,
+            "saved": false,
+            "validation_status": "valid",
+            "validation_message": null,
+            "university_name": "中国科学技术大学",
+            "collection_domain": "admissions_notice",
+            "homepage_url": "https://yz.ustc.edu.cn/",
+            "source_url": "https://yz.ustc.edu.cn/column/182?num=-1",
+            "source_title": "More",
+            "source_kind": "list_page",
+            "admissions_levels": [
+              "graduate"
+            ],
+            "admissions_tracks": [
+              "graduate"
+            ],
+            "track": "graduate",
+            "candidate_type": "list_page",
+            "source_suitability_score": 100.0,
+            "topic_relevance_score": 40.0,
+            "reject_reason_code": "manual_confirmation_required",
+            "confidence_score": 100.0,
+            "reason": "More",
+            "source_origin": null,
+            "health_status": null
+          },
+          {
+            "source_id": null,
+            "saved": false,
+            "validation_status": "valid",
+            "validation_message": null,
+            "university_name": "中国科学技术大学",
+            "collection_domain": "admissions_notice",
+            "homepage_url": "https://yz.ustc.edu.cn/",
+            "source_url": "https://yz.ustc.edu.cn/column/181?num=-1",
+            "source_title": "More",
+            "source_kind": "list_page",
+            "admissions_levels": [
+              "graduate"
+            ],
+            "admissions_tracks": [
+              "graduate"
+            ],
+            "track": "graduate",
+            "candidate_type": "list_page",
+            "source_suitability_score": 100.0,
+            "topic_relevance_score": 40.0,
+            "reject_reason_code": "manual_confirmation_required",
+            "confidence_score": 100.0,
+            "reason": "More",
+            "source_origin": null,
+            "health_status": null
+          },
+          {
+            "source_id": null,
+            "saved": false,
+            "validation_status": "valid",
+            "validation_message": null,
+            "university_name": "中国科学技术大学",
+            "collection_domain": "admissions_notice",
+            "homepage_url": "https://yz.ustc.edu.cn/",
+            "source_url": "https://yz.ustc.edu.cn/column/190?num=3",
+            "source_title": "More",
+            "source_kind": "list_page",
+            "admissions_levels": [
+              "graduate"
+            ],
+            "admissions_tracks": [
+              "graduate"
+            ],
+            "track": "graduate",
+            "candidate_type": "list_page",
+            "source_suitability_score": 100.0,
+            "topic_relevance_score": 40.0,
+            "reject_reason_code": "manual_confirmation_required",
+            "confidence_score": 100.0,
+            "reason": "More",
+            "source_origin": null,
+            "health_status": null
+          },
+          {
+            "source_id": null,
+            "saved": false,
+            "validation_status": "valid",
+            "validation_message": null,
+            "university_name": "中国科学技术大学",
+            "collection_domain": "admissions_notice",
+            "homepage_url": "https://yz.ustc.edu.cn/",
+            "source_url": "https://yz.ustc.edu.cn/column/189?num=4",
+            "source_title": "More",
+            "source_kind": "list_page",
+            "admissions_levels": [
+              "graduate"
+            ],
+            "admissions_tracks": [
+              "graduate"
+            ],
+            "track": "graduate",
+            "candidate_type": "list_page",
+            "source_suitability_score": 100.0,
+            "topic_relevance_score": 40.0,
+            "reject_reason_code": "manual_confirmation_required",
+            "confidence_score": 100.0,
+            "reason": "More",
+            "source_origin": null,
+            "health_status": null
+          },
+          {
+            "source_id": null,
+            "saved": false,
+            "validation_status": "valid",
+            "validation_message": null,
+            "university_name": "中国科学技术大学",
+            "collection_domain": "admissions_notice",
+            "homepage_url": "https://yz.ustc.edu.cn/",
+            "source_url": "https://yz.ustc.edu.cn/column/182",
+            "source_title": "More",
+            "source_kind": "list_page",
+            "admissions_levels": [
+              "graduate"
+            ],
+            "admissions_tracks": [
+              "graduate"
+            ],
+            "track": "graduate",
+            "candidate_type": "list_page",
+            "source_suitability_score": 100.0,
+            "topic_relevance_score": 40.0,
+            "reject_reason_code": "manual_confirmation_required",
+            "confidence_score": 100.0,
+            "reason": "More",
+            "source_origin": null,
+            "health_status": null
+          }
+        ],
+        "normalized_source": {
+          "name": "中国科学技术大学 通知公告",
+          "organization_name": "中国科学技术大学",
+          "source_type": "admissions_notice",
+          "collection_domain": "admissions_notice",
+          "source_origin": "discovered_by_agent",
+          "base_url": "https://yz.ustc.edu.cn/",
+          "start_urls_json": [
+            "https://yz.ustc.edu.cn/column/182?num=-1"
+          ],
+          "site_type": "school",
+          "crawl_mode": "static",
+          "status": "active",
+          "onboarding_status": "validated",
+          "confidence_score": 0.0,
+          "entrypoint_url": "https://yz.ustc.edu.cn/",
+          "health_status": "healthy",
+          "last_discovered_at": "2026-05-05T12:56:13.568169",
+          "last_validated_at": "2026-05-05T12:56:13.568172",
+          "last_success_at": null,
+          "last_failure_reason": null,
+          "validation_evidence": {
+            "validation_issue_count": 0,
+            "resolved_source_url": "https://yz.ustc.edu.cn/column/182?num=-1",
+            "entrypoint_url": "https://yz.ustc.edu.cn/"
+          },
+          "scope_json": {
+            "university_name": "中国科学技术大学",
+            "admissions_levels": [
+              "graduate"
+            ],
+            "admissions_tracks": [
+              "graduate"
+            ],
+            "selected_track": "graduate"
+          },
+          "resolver_meta_json": {
+            "reason": "More",
+            "confidence_score": 0.0,
+            "source_suitability_score": 100.0,
+            "topic_relevance_score": 40.0,
+            "resolved_at": "2026-05-05T12:56:13.568174",
+            "homepage_url": "https://yz.ustc.edu.cn/",
+            "source_url": "https://yz.ustc.edu.cn/column/182?num=-1",
+            "source_kind": "list_page",
+            "candidate_type": "list_page",
+            "selected_track": "graduate",
+            "admissions_tracks": [
+              "graduate"
+            ],
+            "canonical_start_url_pattern": "https://yz.ustc.edu.cn/column/182?num=-1"
+          },
+          "config_json": {
+            "collection_domain": "admissions_notice",
+            "institution": "中国科学技术大学",
+            "aliases": [
+              "中国科学技术大学"
+            ],
+            "source_kind": "list_page",
+            "resolver": "deepseek",
+            "source_title": "通知公告",
+            "reason": "More",
+            "list_page_mode": null,
+            "pagination_hint": null,
+            "detail_link_hint": null,
+            "list_pages": [
+              "https://yz.ustc.edu.cn/column/182?num=-1"
+            ],
+            "list": {
+              "request_method": "GET",
+              "request_data": {},
+              "request_json": {},
+              "request_headers": {},
+              "item_selector": ".notice-item, .news-item, li, tr",
+              "title_selector": "a",
+              "link_selector": "a",
+              "date_selector": ".date, time, .time"
+            },
+            "detail": {
+              "title_selector": "h1, .title, .notice-title, .news-title",
+              "publish_date_selector": ".publish-date, .date, time",
+              "content_selector": ".article, article, .content, .main-content, .intro",
+              "attachment_selector": ".article a, article a, .content a, .main-content a"
+            },
+            "admissions_levels": [
+              "graduate"
+            ],
+            "admissions_tracks": [
+              "graduate"
+            ],
+            "selected_track": "graduate",
+            "candidate_type": "list_page",
+            "schedule_hours": 6,
+            "hot_source": true,
+            "probe_target": "admissions_notice",
+            "engine": "scrapy",
+            "render_mode": "dynamic",
+            "scrapy": {
+              "concurrent_requests": 8,
+              "download_timeout_seconds": 20,
+              "obey_robots_txt": false
+            },
+            "playwright": {
+              "enabled": true,
+              "wait_until": "networkidle",
+              "timeout_ms": 30000
+            }
+          }
+        },
+        "selected_candidate": {
+          "source_id": null,
+          "saved": false,
+          "validation_status": "valid",
+          "validation_message": null,
+          "university_name": "中国科学技术大学",
+          "collection_domain": "admissions_notice",
+          "homepage_url": "https://yz.ustc.edu.cn/",
+          "source_url": "https://yz.ustc.edu.cn/column/182?num=-1",
+          "source_title": "通知公告",
+          "source_kind": "list_page",
+          "admissions_levels": [
+            "graduate"
+          ],
+          "admissions_tracks": [
+            "graduate"
+          ],
+          "track": "graduate",
+          "candidate_type": "list_page",
+          "source_suitability_score": 100.0,
+          "topic_relevance_score": 40.0,
+          "reject_reason_code": "manual_confirmation_required",
+          "confidence_score": 100.0,
+          "reason": "More",
+          "source_origin": null,
+          "health_status": null
+        },
+        "confidence_score": 0.9
+      },
+      "fallback_notes": []
+    },
+    {
+      "university_name": "哈尔滨工业大学",
+      "normalized_name": "哈尔滨工业大学",
+      "scope": "graduate_admissions",
+      "official_homepage_url": "https://www.hit.edu.cn/",
+      "entrypoint_candidates": [
+        "https://yzb.hit.edu.cn/main.htm"
+      ],
+      "selected_entrypoint_url": "https://yzb.hit.edu.cn/main.htm",
+      "selected_source_url": "https://yzb.hit.edu.cn/8817/list.htm",
+      "source_title": "招生章程",
+      "source_kind": "list_page",
+      "candidate_type": "list_page",
+      "health_status": "healthy",
+      "confidence_score": 0.9,
+      "checked_at": "2026-05-05T12:56:15.322305",
+      "validation_evidence": {
+        "entrypoint_url": "https://yzb.hit.edu.cn/main.htm",
+        "entrypoint_title": "哈尔滨工业大学-研究生招生网",
+        "entrypoint_status_code": 200,
+        "raw_candidate_count": 41,
+        "featured_candidate_count": 41,
+        "candidate_track_counts": {
+          "graduate": 41
+        },
+        "candidate_type_counts": {
+          "list_page": 15,
+          "channel_page": 9,
+          "site_home": 2,
+          "detail_page": 14,
+          "file_page": 1
+        },
+        "reject_reason_counts": {
+          "manual_confirmation_required": 15,
+          "entry_page_rejected": 5
+        },
+        "top_results": [
+          {
+            "source_id": null,
+            "saved": false,
+            "validation_status": "valid",
+            "validation_message": null,
+            "university_name": "哈尔滨工业大学",
+            "collection_domain": "admissions_notice",
+            "homepage_url": "https://yzb.hit.edu.cn/main.htm",
+            "source_url": "https://yzb.hit.edu.cn/8817/list.htm",
+            "source_title": "硕士招生",
+            "source_kind": "list_page",
+            "admissions_levels": [
+              "graduate"
+            ],
+            "admissions_tracks": [
+              "graduate"
+            ],
+            "track": "graduate",
+            "candidate_type": "list_page",
+            "source_suitability_score": 100.0,
+            "topic_relevance_score": 52.0,
+            "reject_reason_code": "manual_confirmation_required",
+            "confidence_score": 100.0,
+            "reason": "硕士招生",
+            "source_origin": null,
+            "health_status": null
+          },
+          {
+            "source_id": null,
+            "saved": false,
+            "validation_status": "valid",
+            "validation_message": null,
+            "university_name": "哈尔滨工业大学",
+            "collection_domain": "admissions_notice",
+            "homepage_url": "https://yzb.hit.edu.cn/main.htm",
+            "source_url": "https://yzb.hit.edu.cn/8822/list.htm",
+            "source_title": "硕士公告",
+            "source_kind": "list_page",
+            "admissions_levels": [
+              "graduate"
+            ],
+            "admissions_tracks": [
+              "graduate"
+            ],
+            "track": "graduate",
+            "candidate_type": "list_page",
+            "source_suitability_score": 100.0,
+            "topic_relevance_score": 52.0,
+            "reject_reason_code": "manual_confirmation_required",
+            "confidence_score": 100.0,
+            "reason": "硕士公告",
+            "source_origin": null,
+            "health_status": null
+          },
+          {
+            "source_id": null,
+            "saved": false,
+            "validation_status": "valid",
+            "validation_message": null,
+            "university_name": "哈尔滨工业大学",
+            "collection_domain": "admissions_notice",
+            "homepage_url": "https://yzb.hit.edu.cn/main.htm",
+            "source_url": "https://yzb.hit.edu.cn/8823/list.htm",
+            "source_title": "招生章程",
+            "source_kind": "list_page",
+            "admissions_levels": [
+              "graduate"
+            ],
+            "admissions_tracks": [
+              "graduate"
+            ],
+            "track": "graduate",
+            "candidate_type": "list_page",
+            "source_suitability_score": 100.0,
+            "topic_relevance_score": 52.0,
+            "reject_reason_code": "manual_confirmation_required",
+            "confidence_score": 100.0,
+            "reason": "招生章程",
+            "source_origin": null,
+            "health_status": null
+          },
+          {
+            "source_id": null,
+            "saved": false,
+            "validation_status": "valid",
+            "validation_message": null,
+            "university_name": "哈尔滨工业大学",
+            "collection_domain": "admissions_notice",
+            "homepage_url": "https://yzb.hit.edu.cn/main.htm",
+            "source_url": "https://yzb.hit.edu.cn/8818/list.htm",
+            "source_title": "博士招生",
+            "source_kind": "list_page",
+            "admissions_levels": [
+              "graduate"
+            ],
+            "admissions_tracks": [
+              "graduate"
+            ],
+            "track": "graduate",
+            "candidate_type": "list_page",
+            "source_suitability_score": 100.0,
+            "topic_relevance_score": 52.0,
+            "reject_reason_code": "manual_confirmation_required",
+            "confidence_score": 100.0,
+            "reason": "博士招生",
+            "source_origin": null,
+            "health_status": null
+          },
+          {
+            "source_id": null,
+            "saved": false,
+            "validation_status": "valid",
+            "validation_message": null,
+            "university_name": "哈尔滨工业大学",
+            "collection_domain": "admissions_notice",
+            "homepage_url": "https://yzb.hit.edu.cn/main.htm",
+            "source_url": "https://yzb.hit.edu.cn/8824/list.htm",
+            "source_title": "博士公告",
+            "source_kind": "list_page",
+            "admissions_levels": [
+              "graduate"
+            ],
+            "admissions_tracks": [
+              "graduate"
+            ],
+            "track": "graduate",
+            "candidate_type": "list_page",
+            "source_suitability_score": 100.0,
+            "topic_relevance_score": 52.0,
+            "reject_reason_code": "manual_confirmation_required",
+            "confidence_score": 100.0,
+            "reason": "博士公告",
+            "source_origin": null,
+            "health_status": null
+          }
+        ],
+        "normalized_source": {
+          "name": "哈尔滨工业大学 招生章程",
+          "organization_name": "哈尔滨工业大学",
+          "source_type": "admissions_notice",
+          "collection_domain": "admissions_notice",
+          "source_origin": "discovered_by_agent",
+          "base_url": "https://yzb.hit.edu.cn/main.htm",
+          "start_urls_json": [
+            "https://yzb.hit.edu.cn/8817/list.htm"
+          ],
+          "site_type": "school",
+          "crawl_mode": "static",
+          "status": "active",
+          "onboarding_status": "validated",
+          "confidence_score": 0.0,
+          "entrypoint_url": "https://yzb.hit.edu.cn/main.htm",
+          "health_status": "healthy",
+          "last_discovered_at": "2026-05-05T12:56:16.920758",
+          "last_validated_at": "2026-05-05T12:56:16.920762",
+          "last_success_at": null,
+          "last_failure_reason": null,
+          "validation_evidence": {
+            "validation_issue_count": 0,
+            "resolved_source_url": "https://yzb.hit.edu.cn/8817/list.htm",
+            "entrypoint_url": "https://yzb.hit.edu.cn/main.htm"
+          },
+          "scope_json": {
+            "university_name": "哈尔滨工业大学",
+            "admissions_levels": [
+              "graduate"
+            ],
+            "admissions_tracks": [
+              "graduate"
+            ],
+            "selected_track": "graduate"
+          },
+          "resolver_meta_json": {
+            "reason": "硕士招生",
+            "confidence_score": 0.0,
+            "source_suitability_score": 100.0,
+            "topic_relevance_score": 52.0,
+            "resolved_at": "2026-05-05T12:56:16.920763",
+            "homepage_url": "https://yzb.hit.edu.cn/main.htm",
+            "source_url": "https://yzb.hit.edu.cn/8817/list.htm",
+            "source_kind": "list_page",
+            "candidate_type": "list_page",
+            "selected_track": "graduate",
+            "admissions_tracks": [
+              "graduate"
+            ],
+            "canonical_start_url_pattern": "https://yzb.hit.edu.cn/:id/list.htm"
+          },
+          "config_json": {
+            "collection_domain": "admissions_notice",
+            "institution": "哈尔滨工业大学",
+            "aliases": [
+              "哈尔滨工业大学"
+            ],
+            "source_kind": "list_page",
+            "resolver": "deepseek",
+            "source_title": "招生章程",
+            "reason": "硕士招生",
+            "list_page_mode": null,
+            "pagination_hint": null,
+            "detail_link_hint": null,
+            "list_pages": [
+              "https://yzb.hit.edu.cn/8817/list.htm"
+            ],
+            "list": {
+              "request_method": "GET",
+              "request_data": {},
+              "request_json": {},
+              "request_headers": {},
+              "item_selector": ".notice-item, .news-item, li, tr",
+              "title_selector": "a",
+              "link_selector": "a",
+              "date_selector": ".date, time, .time"
+            },
+            "detail": {
+              "title_selector": "h1, .title, .notice-title, .news-title",
+              "publish_date_selector": ".publish-date, .date, time",
+              "content_selector": ".article, article, .content, .main-content, .intro",
+              "attachment_selector": ".article a, article a, .content a, .main-content a"
+            },
+            "admissions_levels": [
+              "graduate"
+            ],
+            "admissions_tracks": [
+              "graduate"
+            ],
+            "selected_track": "graduate",
+            "candidate_type": "list_page",
+            "schedule_hours": 6,
+            "hot_source": true,
+            "probe_target": "admissions_notice",
+            "engine": "scrapy",
+            "render_mode": "dynamic",
+            "scrapy": {
+              "concurrent_requests": 8,
+              "download_timeout_seconds": 20,
+              "obey_robots_txt": false
+            },
+            "playwright": {
+              "enabled": true,
+              "wait_until": "networkidle",
+              "timeout_ms": 30000
+            }
+          }
+        },
+        "selected_candidate": {
+          "source_id": null,
+          "saved": false,
+          "validation_status": "valid",
+          "validation_message": null,
+          "university_name": "哈尔滨工业大学",
+          "collection_domain": "admissions_notice",
+          "homepage_url": "https://yzb.hit.edu.cn/main.htm",
+          "source_url": "https://yzb.hit.edu.cn/8817/list.htm",
+          "source_title": "招生章程",
+          "source_kind": "list_page",
+          "admissions_levels": [
+            "graduate"
+          ],
+          "admissions_tracks": [
+            "graduate"
+          ],
+          "track": "graduate",
+          "candidate_type": "list_page",
+          "source_suitability_score": 100.0,
+          "topic_relevance_score": 52.0,
+          "reject_reason_code": "manual_confirmation_required",
+          "confidence_score": 100.0,
+          "reason": "硕士招生",
+          "source_origin": null,
+          "health_status": null
+        },
+        "confidence_score": 0.9
+      },
+      "fallback_notes": []
+    },
+    {
+      "university_name": "西安交通大学",
+      "normalized_name": "西安交通大学",
+      "scope": "graduate_admissions",
+      "official_homepage_url": "https://www.xjtu.edu.cn/",
+      "entrypoint_candidates": [
+        "https://yz.xjtu.edu.cn/"
+      ],
+      "selected_entrypoint_url": "https://yz.xjtu.edu.cn/",
+      "selected_source_url": "https://yz.xjtu.edu.cn/index/tzgg.htm",
+      "source_title": "通知公告",
+      "source_kind": "list_page",
+      "candidate_type": "list_page",
+      "health_status": "healthy",
+      "confidence_score": 0.9,
+      "checked_at": "2026-05-05T12:56:18.698827",
+      "validation_evidence": {
+        "entrypoint_url": "https://yz.xjtu.edu.cn/",
+        "entrypoint_title": "西安交通大学研究生招生信息网",
+        "entrypoint_status_code": 200,
+        "raw_candidate_count": 59,
+        "featured_candidate_count": 59,
+        "candidate_track_counts": {
+          "graduate": 59
+        },
+        "candidate_type_counts": {
+          "list_page": 8,
+          "channel_page": 15,
+          "site_home": 3,
+          "detail_page": 25,
+          "file_page": 8
+        },
+        "reject_reason_counts": {
+          "manual_confirmation_required": 8,
+          "entry_page_rejected": 12
+        },
+        "top_results": [
+          {
+            "source_id": null,
+            "saved": false,
+            "validation_status": "valid",
+            "validation_message": null,
+            "university_name": "西安交通大学",
+            "collection_domain": "admissions_notice",
+            "homepage_url": "https://yz.xjtu.edu.cn/",
+            "source_url": "https://yz.xjtu.edu.cn/content-liu.jsp?urltype=tree.TreeTempUrl&wbtreeid=1017",
+            "source_title": "招生咨询",
+            "source_kind": "list_page",
+            "admissions_levels": [
+              "graduate"
+            ],
+            "admissions_tracks": [
+              "graduate"
+            ],
+            "track": "graduate",
+            "candidate_type": "list_page",
+            "source_suitability_score": 100.0,
+            "topic_relevance_score": 52.0,
+            "reject_reason_code": "manual_confirmation_required",
+            "confidence_score": 100.0,
+            "reason": "招生咨询",
+            "source_origin": null,
+            "health_status": null
+          },
+          {
+            "source_id": null,
+            "saved": false,
+            "validation_status": "valid",
+            "validation_message": null,
+            "university_name": "西安交通大学",
+            "collection_domain": "admissions_notice",
+            "homepage_url": "https://yz.xjtu.edu.cn/",
+            "source_url": "https://yzbm.xjtu.edu.cn/zsml/sszsml/detailtk/bfo8@yEtRpW1EyxsEKg7eQ==",
+            "source_title": "西安交通大学2026年硕士研究生招生目录（普通招考）",
+            "source_kind": "list_page",
+            "admissions_levels": [
+              "graduate"
+            ],
+            "admissions_tracks": [
+              "graduate"
+            ],
+            "track": "graduate",
+            "candidate_type": "list_page",
+            "source_suitability_score": 100.0,
+            "topic_relevance_score": 52.0,
+            "reject_reason_code": "manual_confirmation_required",
+            "confidence_score": 100.0,
+            "reason": "西安交通大学2026年硕士研究生招生目录（普通招考）",
+            "source_origin": null,
+            "health_status": null
+          },
+          {
+            "source_id": null,
+            "saved": false,
+            "validation_status": "valid",
+            "validation_message": null,
+            "university_name": "西安交通大学",
+            "collection_domain": "admissions_notice",
+            "homepage_url": "https://yz.xjtu.edu.cn/",
+            "source_url": "https://yzbm.xjtu.edu.cn/zsml/bszsml/detailtm/bfo8@yEtRpW1EyxsEKg7eQ==",
+            "source_title": "西安交通大学2026年推荐免试研究生招生专业目录（博士）",
+            "source_kind": "list_page",
+            "admissions_levels": [
+              "graduate"
+            ],
+            "admissions_tracks": [
+              "graduate"
+            ],
+            "track": "graduate",
+            "candidate_type": "list_page",
+            "source_suitability_score": 100.0,
+            "topic_relevance_score": 52.0,
+            "reject_reason_code": "manual_confirmation_required",
+            "confidence_score": 100.0,
+            "reason": "西安交通大学2026年推荐免试研究生招生专业目录（博士）",
+            "source_origin": null,
+            "health_status": null
+          },
+          {
+            "source_id": null,
+            "saved": false,
+            "validation_status": "valid",
+            "validation_message": null,
+            "university_name": "西安交通大学",
+            "collection_domain": "admissions_notice",
+            "homepage_url": "https://yz.xjtu.edu.cn/",
+            "source_url": "https://yzbm.xjtu.edu.cn/zsml/sszsml/detailtm/bfo8@yEtRpW1EyxsEKg7eQ==",
+            "source_title": "西安交通大学2026年推荐免试研究生招生专业目录（硕士）",
+            "source_kind": "list_page",
+            "admissions_levels": [
+              "graduate"
+            ],
+            "admissions_tracks": [
+              "graduate"
+            ],
+            "track": "graduate",
+            "candidate_type": "list_page",
+            "source_suitability_score": 100.0,
+            "topic_relevance_score": 52.0,
+            "reject_reason_code": "manual_confirmation_required",
+            "confidence_score": 100.0,
+            "reason": "西安交通大学2026年推荐免试研究生招生专业目录（硕士）",
+            "source_origin": null,
+            "health_status": null
+          },
+          {
+            "source_id": null,
+            "saved": false,
+            "validation_status": "valid",
+            "validation_message": null,
+            "university_name": "西安交通大学",
+            "collection_domain": "admissions_notice",
+            "homepage_url": "https://yz.xjtu.edu.cn/",
+            "source_url": "https://yz.xjtu.edu.cn/search.jsp?urltype=tree.TreeTempUrl&wbtreeid=1026",
+            "source_title": "站内搜索",
+            "source_kind": "list_page",
+            "admissions_levels": [
+              "graduate"
+            ],
+            "admissions_tracks": [
+              "graduate"
+            ],
+            "track": "graduate",
+            "candidate_type": "list_page",
+            "source_suitability_score": 100.0,
+            "topic_relevance_score": 40.0,
+            "reject_reason_code": "manual_confirmation_required",
+            "confidence_score": 100.0,
+            "reason": "站内搜索",
+            "source_origin": null,
+            "health_status": null
+          }
+        ],
+        "normalized_source": {
+          "name": "西安交通大学 通知公告",
+          "organization_name": "西安交通大学",
+          "source_type": "admissions_notice",
+          "collection_domain": "admissions_notice",
+          "source_origin": "discovered_by_agent",
+          "base_url": "https://yz.xjtu.edu.cn/",
+          "start_urls_json": [
+            "https://yz.xjtu.edu.cn/index/tzgg.htm"
+          ],
+          "site_type": "school",
+          "crawl_mode": "static",
+          "status": "active",
+          "onboarding_status": "validated",
+          "confidence_score": 0.0,
+          "entrypoint_url": "https://yz.xjtu.edu.cn/",
+          "health_status": "healthy",
+          "last_discovered_at": "2026-05-05T12:56:19.731694",
+          "last_validated_at": "2026-05-05T12:56:19.731698",
+          "last_success_at": null,
+          "last_failure_reason": null,
+          "validation_evidence": {
+            "validation_issue_count": 0,
+            "resolved_source_url": "https://yz.xjtu.edu.cn/index/tzgg.htm",
+            "entrypoint_url": "https://yz.xjtu.edu.cn/"
+          },
+          "scope_json": {
+            "university_name": "西安交通大学",
+            "admissions_levels": [
+              "graduate"
+            ],
+            "admissions_tracks": [
+              "graduate"
+            ],
+            "selected_track": "graduate"
+          },
+          "resolver_meta_json": {
+            "reason": "MORE",
+            "confidence_score": 0.0,
+            "source_suitability_score": 100.0,
+            "topic_relevance_score": 40.0,
+            "resolved_at": "2026-05-05T12:56:19.731699",
+            "homepage_url": "https://yz.xjtu.edu.cn/",
+            "source_url": "https://yz.xjtu.edu.cn/index/tzgg.htm",
+            "source_kind": "list_page",
+            "candidate_type": "list_page",
+            "selected_track": "graduate",
+            "admissions_tracks": [
+              "graduate"
+            ],
+            "canonical_start_url_pattern": "https://yz.xjtu.edu.cn/index/tzgg.htm"
+          },
+          "config_json": {
+            "collection_domain": "admissions_notice",
+            "institution": "西安交通大学",
+            "aliases": [
+              "西安交通大学"
+            ],
+            "source_kind": "list_page",
+            "resolver": "deepseek",
+            "source_title": "通知公告",
+            "reason": "MORE",
+            "list_page_mode": null,
+            "pagination_hint": null,
+            "detail_link_hint": null,
+            "list_pages": [
+              "https://yz.xjtu.edu.cn/index/tzgg.htm"
+            ],
+            "list": {
+              "request_method": "GET",
+              "request_data": {},
+              "request_json": {},
+              "request_headers": {},
+              "item_selector": ".notice-item, .news-item, li, tr",
+              "title_selector": "a",
+              "link_selector": "a",
+              "date_selector": ".date, time, .time"
+            },
+            "detail": {
+              "title_selector": "h1, .title, .notice-title, .news-title",
+              "publish_date_selector": ".publish-date, .date, time",
+              "content_selector": ".article, article, .content, .main-content, .intro",
+              "attachment_selector": ".article a, article a, .content a, .main-content a"
+            },
+            "admissions_levels": [
+              "graduate"
+            ],
+            "admissions_tracks": [
+              "graduate"
+            ],
+            "selected_track": "graduate",
+            "candidate_type": "list_page",
+            "schedule_hours": 6,
+            "hot_source": true,
+            "probe_target": "admissions_notice",
+            "engine": "scrapy",
+            "render_mode": "dynamic",
+            "scrapy": {
+              "concurrent_requests": 8,
+              "download_timeout_seconds": 20,
+              "obey_robots_txt": false
+            },
+            "playwright": {
+              "enabled": true,
+              "wait_until": "networkidle",
+              "timeout_ms": 30000
+            }
+          }
+        },
+        "selected_candidate": {
+          "source_id": null,
+          "saved": false,
+          "validation_status": "valid",
+          "validation_message": null,
+          "university_name": "西安交通大学",
+          "collection_domain": "admissions_notice",
+          "homepage_url": "https://yz.xjtu.edu.cn/",
+          "source_url": "https://yz.xjtu.edu.cn/index/tzgg.htm",
+          "source_title": "通知公告",
+          "source_kind": "list_page",
+          "admissions_levels": [
+            "graduate"
+          ],
+          "admissions_tracks": [
+            "graduate"
+          ],
+          "track": "graduate",
+          "candidate_type": "list_page",
+          "source_suitability_score": 100.0,
+          "topic_relevance_score": 40.0,
+          "reject_reason_code": "manual_confirmation_required",
+          "confidence_score": 100.0,
+          "reason": "MORE",
+          "source_origin": null,
+          "health_status": null
+        },
+        "confidence_score": 0.9
+      },
+      "fallback_notes": []
+    }
+  ]
+}
