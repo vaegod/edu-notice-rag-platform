@@ -93,6 +93,50 @@ def test_siliconflow_client_logs_actual_override_model(monkeypatch):
     get_settings.cache_clear()
 
 
+def test_list_item_selector_falls_back_when_llm_times_out():
+    from types import SimpleNamespace
+
+    from app.services.llm.list_selector import ListItemSelector
+
+    class TimeoutLLM:
+        enabled = True
+
+        def chat_json(self, **kwargs):
+            raise TimeoutError("The read operation timed out")
+
+    selector = ListItemSelector(llm_client=TimeoutLLM())
+    selector.settings = SimpleNamespace(mock_llm_enabled=False)
+
+    items = selector.select_items(
+        source_name="示例大学硕士招生动态",
+        collection_domain="admissions_notice",
+        page_url="https://yz.example.edu.cn/zs/list.html",
+        page_title="硕士招生动态",
+        links=[
+            {
+                "title": "2026年硕士研究生招生复试通知",
+                "url": "https://yz.example.edu.cn/info/1001/1234.htm",
+                "snippet": "复试通知",
+            },
+            {
+                "title": "外部链接",
+                "url": "https://external.example.com/notice.html",
+                "snippet": "外部链接",
+            },
+        ],
+        page_text="硕士研究生招生复试通知",
+        max_items=5,
+    )
+
+    assert items == [
+        {
+            "title": "2026年硕士研究生招生复试通知",
+            "url": "https://yz.example.edu.cn/info/1001/1234.htm",
+            "publish_date": None,
+        }
+    ]
+
+
 def test_parse_date_string():
     parsed = parse_date_string("发布时间：2026年03月21日")
     assert parsed is not None
