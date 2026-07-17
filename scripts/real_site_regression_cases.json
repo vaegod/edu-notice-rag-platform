@@ -1,82 +1,42 @@
 [
   {
-    "name": "北京大学计算机学院通知公告",
+    "name": "北京大学研究生招生公告入口",
     "organization_name": "北京大学",
-    "department_name": "计算机学院",
-    "url": "https://cs.pku.edu.cn/xyxw/tzgg.htm",
-    "site_type": "college",
-    "crawl_mode": "static",
-    "engine": "legacy"
+    "department_name": "研究生招生办公室",
+    "url": "https://admission.pku.edu.cn/index.htm",
+    "site_type": "school",
+    "crawl_mode": "dynamic"
   },
   {
-    "name": "上海交通大学计算机学院学生事务通知",
+    "name": "清华大学研究生招生公告入口",
+    "organization_name": "清华大学",
+    "department_name": "研究生招生办公室",
+    "url": "https://yz.tsinghua.edu.cn/",
+    "site_type": "school",
+    "crawl_mode": "dynamic"
+  },
+  {
+    "name": "上海交通大学研究生招生公告入口",
     "organization_name": "上海交通大学",
-    "department_name": "计算机学院",
-    "url": "https://www.cs.sjtu.edu.cn/active/ajax_type_list.html",
-    "site_type": "college",
-    "crawl_mode": "static",
-    "engine": "legacy",
-    "request_data": {
-      "page": 1,
-      "cat_code": "xsgz-tzgg-xssw",
-      "type": "",
-      "search": "",
-      "extend_id": "0",
-      "template": "ajax_news_list1_search"
-    }
+    "department_name": "研究生招生办公室",
+    "url": "https://yzb.sjtu.edu.cn/",
+    "site_type": "school",
+    "crawl_mode": "dynamic"
   },
   {
-    "name": "北京物资学院计算机与人工智能学院通知公告",
-    "organization_name": "北京物资学院",
-    "department_name": "计算机与人工智能学院",
-    "url": "https://xxxy.bwu.edu.cn/xwgg/tzgg/xytz.htm",
-    "site_type": "college",
-    "crawl_mode": "static",
-    "engine": "legacy"
+    "name": "浙江大学研究生招生公告入口",
+    "organization_name": "浙江大学",
+    "department_name": "研究生招生办公室",
+    "url": "https://www.grs.zju.edu.cn/yjszs/",
+    "site_type": "school",
+    "crawl_mode": "dynamic"
   },
   {
-    "name": "广州大学人工智能学院通知公告",
-    "organization_name": "广州大学",
-    "department_name": "人工智能学院",
-    "url": "https://ai.gzhu.edu.cn/notice.htm",
-    "site_type": "college",
-    "crawl_mode": "static",
-    "engine": "legacy"
-  },
-  {
-    "name": "深圳理工大学计算机科学与控制工程学院通知公告",
-    "organization_name": "深圳理工大学",
-    "department_name": "计算机科学与控制工程学院",
-    "url": "https://csce.suat-sz.edu.cn/xwdt/tzgg.htm",
-    "site_type": "college",
-    "crawl_mode": "static",
-    "engine": "legacy"
-  },
-  {
-    "name": "安徽工业大学研究生院首页发现",
+    "name": "安徽工业大学研究生招生公告入口",
     "organization_name": "安徽工业大学",
     "department_name": "研究生院",
     "url": "https://graduate.ahut.edu.cn/",
-    "site_type": "college",
-    "crawl_mode": "static",
-    "engine": "scrapy"
-  },
-  {
-    "name": "广州大学人工智能学院首页发现",
-    "organization_name": "广州大学",
-    "department_name": "人工智能学院",
-    "url": "https://ai.gzhu.edu.cn/",
-    "site_type": "college",
-    "crawl_mode": "static",
-    "engine": "scrapy"
-  },
-  {
-    "name": "东南大学本科招生网首页发现",
-    "organization_name": "东南大学",
-    "department_name": "本科招生办公室",
-    "url": "https://zsb.seu.edu.cn/",
-    "site_type": "college",
-    "crawl_mode": "static",
-    "engine": "scrapy"
+    "site_type": "school",
+    "crawl_mode": "dynamic"
   }
 ]

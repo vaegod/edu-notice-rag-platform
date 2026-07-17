@@ -10,6 +10,8 @@ class TaskCreate(BaseModel):
     task_type: str = "crawl_admissions_notice"
     source_id: int
     trigger_mode: str = "manual"
+    idempotency_key: str | None = Field(default=None, min_length=1, max_length=128)
+    max_attempts: int = Field(default=3, ge=1, le=5)
     task_payload: dict[str, Any] = Field(default_factory=dict)
     execute_immediately: bool = True
 
@@ -35,6 +37,10 @@ class TaskRead(BaseModel):
     source_id: int
     source_name: str | None = None
     trigger_mode: str
+    trace_id: str | None = None
+    idempotency_key: str | None = None
+    attempt_count: int = 0
+    max_attempts: int = 3
     task_payload: dict[str, Any]
     status: str
     progress_stage: str | None = None

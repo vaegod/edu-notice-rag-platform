@@ -1,0 +1,44 @@
+{
+  "intent_cases": [
+    {"id":"I01","query":"采集清华大学研究生招生公告","expected_intent":"crawl_admissions","expected_valid":true,"expected_university":"清华大学"},
+    {"id":"I02","query":"提供C9高校的研究生招生公告数据源","expected_intent":"discover_sources","expected_valid":true},
+    {"id":"I03","query":"查询北京大学最近研究生招生信息","expected_intent":"search_admissions","expected_valid":true,"expected_university":"北京大学"},
+    {"id":"I04","query":"总结复旦大学硕士招生公告","expected_intent":"summarize_admissions","expected_valid":true,"expected_university":"复旦大学"},
+    {"id":"I05","query":"上海交通大学研究生招生截止日期","expected_intent":"list_deadlines","expected_valid":true,"expected_university":"上海交通大学"},
+    {"id":"I06","query":"采集安徽工业大学研究生招生公告","expected_intent":"crawl_admissions","expected_valid":false,"expected_university":"安徽工业大学"},
+    {"id":"I07","query":"采集安徽工业大学研究生招生公告","homepage_url":"https://graduate.ahut.edu.cn/","expected_intent":"crawl_admissions","expected_valid":true,"expected_university":"安徽工业大学"},
+    {"id":"I08","query":"采集清华大学本科招生公告","expected_intent":"crawl_admissions","expected_valid":false,"expected_university":"清华大学"},
+    {"id":"I09","query":"采集北京大学MBA招生公告","expected_intent":"crawl_admissions","expected_valid":false,"expected_university":"北京大学"},
+    {"id":"I10","query":"采集浙江大学新闻中心","expected_intent":"crawl_source","expected_valid":false,"expected_university":"浙江大学"},
+    {"id":"I11","query":"总结南京大学学校概况","expected_intent":"summarize_documents","expected_valid":false,"expected_university":"南京大学"},
+    {"id":"I12","query":"列出中国科学技术大学研究生招生数据源","expected_intent":"discover_sources","expected_valid":true,"expected_university":"中国科学技术大学"},
+    {"id":"I13","query":"抓取哈工大博士招生简章","expected_intent":"crawl_admissions","expected_valid":true,"expected_university":"哈尔滨工业大学"},
+    {"id":"I14","query":"查询西交推免通知","expected_intent":"search_admissions","expected_valid":true,"expected_university":"西安交通大学"},
+    {"id":"I15","query":"C9高校研究生招生有哪些信息","expected_intent":"search_admissions","expected_valid":true},
+    {"id":"I16","query":"采集浙江大学留学生招生","expected_intent":"crawl_admissions","expected_valid":false,"expected_university":"浙江大学"},
+    {"id":"I17","query":"采集复旦大学继续教育招生","expected_intent":"crawl_admissions","expected_valid":false,"expected_university":"复旦大学"},
+    {"id":"I18","query":"采集清华大学第二学士学位招生","expected_intent":"crawl_admissions","expected_valid":false,"expected_university":"清华大学"},
+    {"id":"I19","query":"查询安徽工业大学研究生招生公告","expected_intent":"search_admissions","expected_valid":false,"expected_university":"安徽工业大学"},
+    {"id":"I20","query":"查询安徽工业大学研究生招生公告","homepage_url":"https://graduate.ahut.edu.cn/","expected_intent":"search_admissions","expected_valid":true,"expected_university":"安徽工业大学"}
+  ],
+  "documents": [
+    {"id":1,"institution_name":"上海交通大学","title":"上海交通大学2026年硕士研究生招生复试工作安排","doc_type":"复试","publish_date":"2026-03-20","deadline":"2026-03-28","summary":"上海交通大学公布2026年硕士研究生招生复试安排，考生需在3月28日前确认。","raw_text":"上海交通大学研究生院发布硕士研究生招生复试工作安排，说明复试时间、材料要求和确认截止日期。","source_url":"https://yzb.sjtu.edu.cn/notice/retest-2026"},
+    {"id":2,"institution_name":"清华大学","title":"清华大学2026年博士研究生招生简章","doc_type":"博士招生","publish_date":"2026-03-19","summary":"清华大学发布2026年博士研究生招生简章，介绍申请条件与考核流程。","raw_text":"清华大学博士研究生招生简章包含报考条件、材料提交和综合考核要求。","source_url":"https://yz.tsinghua.edu.cn/notice/phd-2026"},
+    {"id":3,"institution_name":"北京大学","title":"北京大学2026年推免夏令营报名通知","doc_type":"推免","publish_date":"2026-03-18","deadline":"2026-03-25","summary":"北京大学推免夏令营报名截至3月25日，申请人需在线提交材料。","raw_text":"北京大学研究生招生办公室发布推免夏令营报名通知，报名截止日期为2026年3月25日。","source_url":"https://admission.pku.edu.cn/notice/summer-camp-2026"},
+    {"id":4,"institution_name":"浙江大学","title":"浙江大学2026年硕士研究生招生调剂通知","doc_type":"调剂","publish_date":"2026-03-17","summary":"浙江大学公布硕士研究生招生调剂要求与申请流程。","raw_text":"浙江大学研究生院发布调剂通知，说明接收专业、申请条件和材料要求。","source_url":"https://www.grs.zju.edu.cn/notice/adjustment-2026"},
+    {"id":5,"institution_name":"复旦大学","title":"复旦大学2026年硕士研究生拟录取名单公示","doc_type":"录取/拟录取","publish_date":"2026-03-16","summary":"复旦大学公示2026年硕士研究生拟录取名单与公示期限。","raw_text":"复旦大学研究生招生办公室发布硕士研究生拟录取名单公示。","source_url":"https://gsao.fudan.edu.cn/notice/admission-2026"},
+    {"id":6,"institution_name":"南京大学","title":"南京大学校园网络维护通知","doc_type":"其他","publish_date":"2026-03-15","summary":"南京大学发布校园网络维护安排。","raw_text":"校园网络将在周末进行维护，部分区域网络服务短时中断。","source_url":"https://www.nju.edu.cn/notice/network-maintenance"}
+  ],
+  "evidence_cases": [
+    {"id":"E01","query":"上海交大硕士复试安排","expected_document_ids":[1]},
+    {"id":"E02","query":"清华大学博士招生简章","expected_document_ids":[2]},
+    {"id":"E03","query":"北大推免夏令营报名","expected_document_ids":[3]},
+    {"id":"E04","query":"浙江大学研究生调剂通知","expected_document_ids":[4]},
+    {"id":"E05","query":"复旦大学拟录取名单","expected_document_ids":[5]},
+    {"id":"E06","query":"哪条公告的报名截止时间是3月25日","expected_document_ids":[3]},
+    {"id":"E07","query":"2026年研究生招生公告","expected_document_ids":[1,2,3,4,5]},
+    {"id":"E08","query":"学校食堂今日菜单","expected_document_ids":[],"expect_refusal":true},
+    {"id":"E09","query":"校园一卡通充值方式","expected_document_ids":[],"expect_refusal":true},
+    {"id":"E10","query":"本科强基计划招生章程","expected_document_ids":[],"expect_refusal":true}
+  ]
+}

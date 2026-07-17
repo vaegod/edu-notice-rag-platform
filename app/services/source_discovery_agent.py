@@ -3,7 +3,8 @@ from __future__ import annotations
 from dataclasses import dataclass, field
 from datetime import date, datetime
 import re
-from typing import Any, Callable
+from typing import TYPE_CHECKING, Any
+from collections.abc import Callable
 from urllib.parse import urljoin, urlparse, urlunparse
 
 from bs4 import BeautifulSoup
@@ -25,6 +26,9 @@ from app.services.admissions_tracks import (
 from app.services.domains import COLLECTION_DOMAIN_ADMISSIONS_NOTICE, normalize_collection_domain
 from app.services.llm.source_resolver import LLMSourceResolverService, ResolvedSourceCandidate
 from app.services.onboarding.providers import Crawl4AIProvider
+
+if TYPE_CHECKING:
+    from app.services.source_resolution import ValidatedResolvedSource
 
 
 @dataclass(slots=True)
@@ -1136,7 +1140,6 @@ class SourceDiscoveryAgentService:
         return any(token.lower() in combined for token in required_tokens)
 
     def _guess_source_kind(self, *, title: str, url: str, snippet: str) -> str:
-        combined = f"{title} {url} {snippet}"
         candidate_type = self._guess_candidate_type(title=title, url=url, snippet=snippet)
         if candidate_type == "list_page":
             return "list_page"
@@ -1390,7 +1393,6 @@ class SourceDiscoveryAgentService:
         validation_status = item.get("validation_status")
         saved = bool(item.get("saved"))
         candidate_type = item.get("candidate_type")
-        stable = 1 if candidate_type in {"site_home", "channel_page", "list_page"} else 0
         if validation_status == "valid" and saved:
             validation_bucket = 4
         elif validation_status == "valid":

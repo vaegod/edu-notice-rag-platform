@@ -3,7 +3,9 @@ from __future__ import annotations
 from datetime import datetime
 import re
 from time import perf_counter
+from uuid import uuid4
 
+from sqlalchemy import select
 from sqlalchemy.orm import Session
 
 from app.core.time import utc_now
@@ -95,10 +97,28 @@ class TaskOrchestrator:
             raise ValueError(source_readiness_message(source))
 
         task_type = normalize_task_type(payload.task_type, collection_domain=source.collection_domain)
+        idempotency_key = (
+            payload.idempotency_key.strip() if payload.idempotency_key else None
+        )
+        if idempotency_key:
+            existing = session.scalar(
+                select(CrawlTask)
+                .where(
+                    CrawlTask.source_id == payload.source_id,
+                    CrawlTask.idempotency_key == idempotency_key,
+                )
+                .order_by(CrawlTask.id.desc())
+            )
+            if existing is not None:
+                return existing, (existing.task_payload or {}).get("execution_result")
+
         task = CrawlTask(
             task_type=task_type,
             source_id=payload.source_id,
             trigger_mode=payload.trigger_mode,
+            trace_id=str(uuid4()),
+            idempotency_key=idempotency_key,
+            max_attempts=payload.max_attempts,
             task_payload={
                 **(payload.task_payload or {}),
                 "progress": {
@@ -129,6 +149,12 @@ class TaskOrchestrator:
         task = session.get(CrawlTask, task_id)
         if task is None:
             raise ValueError("Task does not exist.")
+        if task.status not in {"failed", "partial_success"}:
+            raise ValueError(f"Task in status '{task.status}' cannot be retried.")
+        if task.attempt_count >= task.max_attempts:
+            raise ValueError(
+                f"Task reached the maximum of {task.max_attempts} attempts."
+            )
         task.status = "pending"
         task.error_message = None
         task.started_at = None
@@ -137,7 +163,10 @@ class TaskOrchestrator:
         task_payload["progress"] = {
             "stage": "queued",
             "percent": 0,
-            "message": "任务已重新排队。",
+            "message": (
+                f"任务已重新排队，下一次为第 {task.attempt_count + 1}/"
+                f"{task.max_attempts} 次执行。"
+            ),
         }
         task.task_payload = task_payload
         session.commit()

@@ -17,17 +17,43 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: "3.11"
+          cache: "pip"
 
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          python -m pip install -r requirements.txt
+          python -m pip install -r requirements.txt -r requirements-dev.txt
 
-      - name: Run tests
-        run: python -m pytest -q
+      - name: Lint
+        run: python -m ruff check .
+
+      - name: Test
+        run: python -m pytest --cov=app --cov-report=term-missing
+
+      - name: Offline platform benchmark
+        run: python scripts/run_platform_benchmark.py --repeats 5 --output-dir artifacts/platform-benchmark
+
+      - name: Upload platform benchmark
+        uses: actions/upload-artifact@v7
+        with:
+          name: platform-benchmark
+          path: artifacts/platform-benchmark
+
+      - name: Dependency audit
+        continue-on-error: true
+        run: python -m pip_audit -r requirements.txt
+
+  docker:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      - name: Docker build
+        run: docker build --file docker/Dockerfile --tag edu-notice-rag-platform:ci .

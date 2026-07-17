@@ -94,7 +94,8 @@ def retry_task(task_id: int, session: Session = Depends(get_db)) -> TaskRead:
     try:
         orchestrator.retry_task(session, task_id)
     except ValueError as exc:
-        raise HTTPException(status_code=404, detail=str(exc)) from exc
+        status_code = 404 if str(exc) == "Task does not exist." else 409
+        raise HTTPException(status_code=status_code, detail=str(exc)) from exc
     task = session.scalar(
         select(CrawlTask).options(joinedload(CrawlTask.source)).where(CrawlTask.id == task_id)
     )

@@ -9,7 +9,6 @@ from sqlalchemy import select
 from sqlalchemy.orm import Session
 
 from app.core.time import utc_now
-from app.models.nl_task import NLTask
 from app.models.source import Source
 from app.schemas.source import SourceCreate, SourceProbeRequest, SourceProbeResponse, SourceValidationPreviewItem, SourceValidationReport
 from app.services.admissions_tracks import broad_levels_from_tracks, normalize_tracks, primary_track

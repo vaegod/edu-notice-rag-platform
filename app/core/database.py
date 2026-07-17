@@ -129,6 +129,31 @@ def _apply_compat_schema_updates(engine: Engine) -> None:
         "CREATE INDEX IF NOT EXISTS ix_documents_institution_name ON documents (institution_name)",
     ] if "documents" in table_names else []
 
+    task_statements = []
+    task_index_statements = []
+    if "crawl_tasks" in table_names:
+        task_columns = {column["name"] for column in inspector.get_columns("crawl_tasks")}
+        for name, definition in [
+            ("trace_id", "VARCHAR(36)"),
+            ("idempotency_key", "VARCHAR(128)"),
+            ("attempt_count", "INTEGER NOT NULL DEFAULT 0"),
+            ("max_attempts", "INTEGER NOT NULL DEFAULT 3"),
+        ]:
+            if name not in task_columns:
+                task_statements.append(
+                    f"ALTER TABLE crawl_tasks ADD COLUMN {name} {definition}"
+                )
+        task_index_statements.extend(
+            [
+                "CREATE INDEX IF NOT EXISTS ix_crawl_tasks_trace_id ON crawl_tasks (trace_id)",
+                (
+                    "CREATE UNIQUE INDEX IF NOT EXISTS "
+                    "uq_crawl_tasks_source_id_idempotency_key "
+                    "ON crawl_tasks (source_id, idempotency_key)"
+                ),
+            ]
+        )
+
     directory_statements = []
     directory_index_statements = []
     if "university_directory" not in table_names:
@@ -168,6 +193,8 @@ def _apply_compat_schema_updates(engine: Engine) -> None:
         and not index_statements
         and not document_statements
         and not document_index_statements
+        and not task_statements
+        and not task_index_statements
         and not directory_statements
         and not directory_index_statements
     ):
@@ -181,6 +208,10 @@ def _apply_compat_schema_updates(engine: Engine) -> None:
         for statement in document_statements:
             connection.execute(text(statement))
         for statement in document_index_statements:
+            connection.execute(text(statement))
+        for statement in task_statements:
+            connection.execute(text(statement))
+        for statement in task_index_statements:
             connection.execute(text(statement))
         for statement in directory_statements:
             connection.execute(text(statement))

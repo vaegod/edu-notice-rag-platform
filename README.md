@@ -1,5 +1,9 @@
 # LLM 驱动的高校公开信息发现、结构化抽取与证据问答平台
 
+[![CI](https://github.com/vaegod/edu-notice-rag-platform/actions/workflows/ci.yml/badge.svg)](https://github.com/vaegod/edu-notice-rag-platform/actions/workflows/ci.yml)
+![Python](https://img.shields.io/badge/Python-3.11-245a9b)
+![License](https://img.shields.io/badge/License-MIT-f1c76a)
+
 本仓库实现的是一个面向高校公开信息治理与大模型应用开发场景的端到端 MVP，当前主流程为：
 
 `自然语言输入 -> 官方入口目录/健康 Source 复用 -> 站内找源智能体 -> 候选校验/保存 -> 受控采集 -> 结构化抽取 -> 证据引用式问答`
@@ -42,8 +46,10 @@
   - 记录 `health_status`、`entrypoint_url`、`last_discovered_at`、`last_success_at`、`last_failure_reason`
   - source 失效后会重新进入站内发现，而不是继续盲用旧入口
 - 轻量证据型 RAG：回答返回 citations、召回文档和置信说明
+- Citation 证据锚点：返回 `document_id`、`raw_page_id`、`source_id`、证据字段、片段和内容哈希；零相关度时明确拒答
 - 自然语言采集链路会在本次采集完成后读取新文档，并立即返回证据型回答
 - 可解释工作流：自然语言执行接口返回固定步骤状态
+- 任务可靠性：支持调用方幂等键、`trace_id`、原子任务领取、执行次数上限和受控重试状态
 - 数据源模板、适配器目录、候选数据源基础校验与保存
 - 文档查询、文档证据查看、按大学分组、大学归属后处理分类
 - APScheduler 进程内定时调度
@@ -170,6 +176,45 @@ powershell -ExecutionPolicy Bypass -File scripts/restart_dev.ps1
 
 - `GET /api/v1/dashboard/overview`
 
+## 评测与验证
+
+### 离线平台评测（无需 API Key）
+
+```powershell
+python scripts/run_platform_benchmark.py
+```
+
+固定评测集包含 30 条样例：20 条意图识别/任务边界样例，以及 10 条证据检索/拒答样例。当前已提交结果如下，完整逐题数据见 [data/eval/results](data/eval/results/README.md)：
+
+| 指标 | 结果 |
+| --- | ---: |
+| 意图识别准确率 | 100.00% |
+| 任务边界判定准确率 | 100.00% |
+| 越界拒绝 Precision / Recall | 100.00% / 100.00% |
+| 证据检索 Recall@1 / Recall@3 / Recall@5 | 88.57% / 94.29% / 100.00% |
+| 无证据拒答准确率 | 100.00% |
+| Citation 可追溯率 | 100.00% |
+
+这些数字只代表仓库内小规模固定样例和规则回退链路，用于 CI 回归；不代表真实高校网站成功率，也不代表在线 DeepSeek 效果。
+
+### 真实站点回归（需要网络，结果会随站点变化）
+
+```powershell
+python scripts/real_site_regression.py --output artifacts/real-site-regression.json
+```
+
+真实站点回归与离线指标分开保存，不在 README 固化容易过期的成功率。脚本会记录选源 URL、候选数量、Agent 轨迹步数、校验置信度和失败原因。
+
+### 本地质量检查
+
+```powershell
+python -m pip install -r requirements.txt -r requirements-dev.txt
+python -m ruff check .
+python -m pytest --cov=app --cov-report=term-missing
+```
+
+GitHub Actions 会在 Windows/Python 3.11 上执行 Ruff、测试、离线评测和依赖审计，并在 Ubuntu 上验证 Docker 镜像构建。
+
 ## 当前实现说明
 
 - 默认本地开发数据库是 SQLite，不要求 PostgreSQL 或 Redis 才能运行
@@ -179,13 +224,14 @@ powershell -ExecutionPolicy Bypass -File scripts/restart_dev.ps1
   - 数据源知识库只保存已验证、可复用的真实列表页/栏目页
 - 文档查询当前采用 SQL 条件过滤和模糊匹配，不是向量检索
 - 后台任务当前采用 FastAPI 进程内线程执行，不是 Celery/Redis 架构
+- 进程内任务通过幂等键避免同一调用方请求重复建单，并通过 `trace_id`、原子领取和最大执行次数约束重复执行；它仍不具备跨进程持久队列的可靠性
 - 如未配置 `SILICONFLOW_API_KEY`，部分链路会回退到规则逻辑，便于本地开发
 
 ## 相关文档
 
-- Agent 协作手册：[AGENTS.md](/D:/1zhinengcaiji/AGENTS.md)
-- 项目报告：[PROJECT_REPORT.md](/D:/1zhinengcaiji/docs/PROJECT_REPORT.md)
-- 功能审计矩阵：[MVP功能审计矩阵.md](/D:/1zhinengcaiji/docs/MVP功能审计矩阵.md)
-- 演示流程：[DEMO_WORKFLOW.md](/D:/1zhinengcaiji/docs/DEMO_WORKFLOW.md)
-- RAG 闭环说明：[RAG_WORKFLOW.md](/D:/1zhinengcaiji/docs/RAG_WORKFLOW.md)
-- Git 展示交付清单：[GIT_HANDOFF.md](/D:/1zhinengcaiji/docs/GIT_HANDOFF.md)
+- Agent 协作手册：[AGENTS.md](AGENTS.md)
+- 项目报告：[PROJECT_REPORT.md](docs/PROJECT_REPORT.md)
+- 功能审计矩阵：[MVP功能审计矩阵.md](docs/MVP功能审计矩阵.md)
+- 演示流程：[DEMO_WORKFLOW.md](docs/DEMO_WORKFLOW.md)
+- RAG 闭环说明：[RAG_WORKFLOW.md](docs/RAG_WORKFLOW.md)
+- Git 展示交付清单：[GIT_HANDOFF.md](docs/GIT_HANDOFF.md)

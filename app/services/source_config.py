@@ -4,7 +4,6 @@ from copy import deepcopy
 from typing import Any
 
 from app.services.domains import (
-    COLLECTION_DOMAIN_ADMISSIONS_NOTICE,
     COLLECTION_DOMAIN_NEWS_CENTER,
     COLLECTION_DOMAIN_SCHOOL_PROFILE,
     normalize_collection_domain,

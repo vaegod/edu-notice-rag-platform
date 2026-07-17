@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import re
 from typing import Any
-from urllib.parse import urlparse
+from urllib.parse import urlparse, urlunparse
 
 from pydantic import BaseModel, Field
 from sqlalchemy.orm import Session
@@ -40,7 +40,7 @@ class ResolvedSourceCandidate(BaseModel):
     crawl_mode: str = "dynamic"
     source_origin: str = "llm_resolved"
 
-    def normalized(self) -> "ResolvedSourceCandidate":
+    def normalized(self) -> ResolvedSourceCandidate:
         payload = self.model_dump()
         payload["collection_domain"] = normalize_collection_domain(payload.get("collection_domain"))
         payload["admissions_tracks"] = normalize_tracks(payload.get("admissions_tracks", []))

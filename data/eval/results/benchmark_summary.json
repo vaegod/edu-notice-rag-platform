@@ -1,0 +1,822 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-07-17T04:04:50+00:00",
+  "benchmark": {
+    "name": "edu-notice-platform-offline-benchmark",
+    "scope": "API-free intent/scope and evidence-grounding regression",
+    "case_count": 30,
+    "intent_case_count": 20,
+    "evidence_case_count": 10,
+    "document_count": 6,
+    "query_repeats": 100
+  },
+  "environment": {
+    "python": "3.12.13",
+    "platform": "Windows-11-10.0.26200-SP0"
+  },
+  "metrics": {
+    "intent_scope": {
+      "intent_accuracy": 1.0,
+      "validation_accuracy": 1.0,
+      "university_accuracy": 1.0,
+      "end_to_end_case_accuracy": 1.0,
+      "refusal_precision": 1.0,
+      "refusal_recall": 1.0,
+      "avg_latency_ms": 0.1688,
+      "p95_latency_ms": 0.3417
+    },
+    "evidence_qa": {
+      "recall_at_1": 0.8857,
+      "recall_at_3": 0.9429,
+      "recall_at_5": 1.0,
+      "mrr": 1.0,
+      "refusal_accuracy": 1.0,
+      "citation_grounded_rate": 1.0,
+      "end_to_end_case_accuracy": 1.0,
+      "avg_latency_ms": 0.1253,
+      "p95_latency_ms": 0.2394
+    }
+  },
+  "cases": [
+    {
+      "suite": "intent_scope",
+      "case_id": "I01",
+      "query": "采集清华大学研究生招生公告",
+      "expected": {
+        "intent": "crawl_admissions",
+        "valid": true,
+        "university": "清华大学"
+      },
+      "observed": {
+        "intent": "crawl_admissions",
+        "valid": true,
+        "university": "清华大学",
+        "message": null
+      },
+      "checks": {
+        "intent_ok": true,
+        "validation_ok": true,
+        "university_ok": true
+      },
+      "passed": true,
+      "latency_ms": 0.3538
+    },
+    {
+      "suite": "intent_scope",
+      "case_id": "I02",
+      "query": "提供C9高校的研究生招生公告数据源",
+      "expected": {
+        "intent": "discover_sources",
+        "valid": true,
+        "university": null
+      },
+      "observed": {
+        "intent": "discover_sources",
+        "valid": true,
+        "university": null,
+        "message": null
+      },
+      "checks": {
+        "intent_ok": true,
+        "validation_ok": true,
+        "university_ok": true
+      },
+      "passed": true,
+      "latency_ms": 0.1861
+    },
+    {
+      "suite": "intent_scope",
+      "case_id": "I03",
+      "query": "查询北京大学最近研究生招生信息",
+      "expected": {
+        "intent": "search_admissions",
+        "valid": true,
+        "university": "北京大学"
+      },
+      "observed": {
+        "intent": "search_admissions",
+        "valid": true,
+        "university": "北京大学",
+        "message": null
+      },
+      "checks": {
+        "intent_ok": true,
+        "validation_ok": true,
+        "university_ok": true
+      },
+      "passed": true,
+      "latency_ms": 0.2624
+    },
+    {
+      "suite": "intent_scope",
+      "case_id": "I04",
+      "query": "总结复旦大学硕士招生公告",
+      "expected": {
+        "intent": "summarize_admissions",
+        "valid": true,
+        "university": "复旦大学"
+      },
+      "observed": {
+        "intent": "summarize_admissions",
+        "valid": true,
+        "university": "复旦大学",
+        "message": null
+      },
+      "checks": {
+        "intent_ok": true,
+        "validation_ok": true,
+        "university_ok": true
+      },
+      "passed": true,
+      "latency_ms": 0.2552
+    },
+    {
+      "suite": "intent_scope",
+      "case_id": "I05",
+      "query": "上海交通大学研究生招生截止日期",
+      "expected": {
+        "intent": "list_deadlines",
+        "valid": true,
+        "university": "上海交通大学"
+      },
+      "observed": {
+        "intent": "list_deadlines",
+        "valid": true,
+        "university": "上海交通大学",
+        "message": null
+      },
+      "checks": {
+        "intent_ok": true,
+        "validation_ok": true,
+        "university_ok": true
+      },
+      "passed": true,
+      "latency_ms": 0.2764
+    },
+    {
+      "suite": "intent_scope",
+      "case_id": "I06",
+      "query": "采集安徽工业大学研究生招生公告",
+      "expected": {
+        "intent": "crawl_admissions",
+        "valid": false,
+        "university": "安徽工业大学"
+      },
+      "observed": {
+        "intent": "crawl_admissions",
+        "valid": false,
+        "university": "安徽工业大学",
+        "message": "默认自动找源只覆盖 C9 高校；非 C9 高校请提供官方首页或研究生招生入口 URL 后再进行受控站内发现。"
+      },
+      "checks": {
+        "intent_ok": true,
+        "validation_ok": true,
+        "university_ok": true
+      },
+      "passed": true,
+      "latency_ms": 0.1066
+    },
+    {
+      "suite": "intent_scope",
+      "case_id": "I07",
+      "query": "采集安徽工业大学研究生招生公告",
+      "expected": {
+        "intent": "crawl_admissions",
+        "valid": true,
+        "university": "安徽工业大学"
+      },
+      "observed": {
+        "intent": "crawl_admissions",
+        "valid": true,
+        "university": "安徽工业大学",
+        "message": null
+      },
+      "checks": {
+        "intent_ok": true,
+        "validation_ok": true,
+        "university_ok": true
+      },
+      "passed": true,
+      "latency_ms": 0.3142
+    },
+    {
+      "suite": "intent_scope",
+      "case_id": "I08",
+      "query": "采集清华大学本科招生公告",
+      "expected": {
+        "intent": "crawl_admissions",
+        "valid": false,
+        "university": "清华大学"
+      },
+      "observed": {
+        "intent": "crawl_admissions",
+        "valid": false,
+        "university": "清华大学",
+        "message": "当前收缩版只支持校级研究生招生公告，不支持本科、留学生、继续教育、MBA 或第二学士学位招生。"
+      },
+      "checks": {
+        "intent_ok": true,
+        "validation_ok": true,
+        "university_ok": true
+      },
+      "passed": true,
+      "latency_ms": 0.0337
+    },
+    {
+      "suite": "intent_scope",
+      "case_id": "I09",
+      "query": "采集北京大学MBA招生公告",
+      "expected": {
+        "intent": "crawl_admissions",
+        "valid": false,
+        "university": "北京大学"
+      },
+      "observed": {
+        "intent": "crawl_admissions",
+        "valid": false,
+        "university": "北京大学",
+        "message": "当前收缩版只支持校级研究生招生公告，不支持本科、留学生、继续教育、MBA 或第二学士学位招生。"
+      },
+      "checks": {
+        "intent_ok": true,
+        "validation_ok": true,
+        "university_ok": true
+      },
+      "passed": true,
+      "latency_ms": 0.0346
+    },
+    {
+      "suite": "intent_scope",
+      "case_id": "I10",
+      "query": "采集浙江大学新闻中心",
+      "expected": {
+        "intent": "crawl_source",
+        "valid": false,
+        "university": "浙江大学"
+      },
+      "observed": {
+        "intent": "crawl_source",
+        "valid": false,
+        "university": "浙江大学",
+        "message": "当前收缩版只支持 C9 高校校级研究生招生公告，不支持新闻中心或学校概况采集。"
+      },
+      "checks": {
+        "intent_ok": true,
+        "validation_ok": true,
+        "university_ok": true
+      },
+      "passed": true,
+      "latency_ms": 0.0269
+    },
+    {
+      "suite": "intent_scope",
+      "case_id": "I11",
+      "query": "总结南京大学学校概况",
+      "expected": {
+        "intent": "summarize_documents",
+        "valid": false,
+        "university": "南京大学"
+      },
+      "observed": {
+        "intent": "summarize_documents",
+        "valid": false,
+        "university": "南京大学",
+        "message": "当前收缩版只支持 C9 高校校级研究生招生公告，不支持新闻中心或学校概况采集。"
+      },
+      "checks": {
+        "intent_ok": true,
+        "validation_ok": true,
+        "university_ok": true
+      },
+      "passed": true,
+      "latency_ms": 0.0287
+    },
+    {
+      "suite": "intent_scope",
+      "case_id": "I12",
+      "query": "列出中国科学技术大学研究生招生数据源",
+      "expected": {
+        "intent": "discover_sources",
+        "valid": true,
+        "university": "中国科学技术大学"
+      },
+      "observed": {
+        "intent": "discover_sources",
+        "valid": true,
+        "university": "中国科学技术大学",
+        "message": null
+      },
+      "checks": {
+        "intent_ok": true,
+        "validation_ok": true,
+        "university_ok": true
+      },
+      "passed": true,
+      "latency_ms": 0.2005
+    },
+    {
+      "suite": "intent_scope",
+      "case_id": "I13",
+      "query": "抓取哈工大博士招生简章",
+      "expected": {
+        "intent": "crawl_admissions",
+        "valid": true,
+        "university": "哈尔滨工业大学"
+      },
+      "observed": {
+        "intent": "crawl_admissions",
+        "valid": true,
+        "university": "哈尔滨工业大学",
+        "message": null
+      },
+      "checks": {
+        "intent_ok": true,
+        "validation_ok": true,
+        "university_ok": true
+      },
+      "passed": true,
+      "latency_ms": 0.1852
+    },
+    {
+      "suite": "intent_scope",
+      "case_id": "I14",
+      "query": "查询西交推免通知",
+      "expected": {
+        "intent": "search_admissions",
+        "valid": true,
+        "university": "西安交通大学"
+      },
+      "observed": {
+        "intent": "search_admissions",
+        "valid": true,
+        "university": "西安交通大学",
+        "message": null
+      },
+      "checks": {
+        "intent_ok": true,
+        "validation_ok": true,
+        "university_ok": true
+      },
+      "passed": true,
+      "latency_ms": 0.2774
+    },
+    {
+      "suite": "intent_scope",
+      "case_id": "I15",
+      "query": "C9高校研究生招生有哪些信息",
+      "expected": {
+        "intent": "search_admissions",
+        "valid": true,
+        "university": null
+      },
+      "observed": {
+        "intent": "search_admissions",
+        "valid": true,
+        "university": null,
+        "message": null
+      },
+      "checks": {
+        "intent_ok": true,
+        "validation_ok": true,
+        "university_ok": true
+      },
+      "passed": true,
+      "latency_ms": 0.2699
+    },
+    {
+      "suite": "intent_scope",
+      "case_id": "I16",
+      "query": "采集浙江大学留学生招生",
+      "expected": {
+        "intent": "crawl_admissions",
+        "valid": false,
+        "university": "浙江大学"
+      },
+      "observed": {
+        "intent": "crawl_admissions",
+        "valid": false,
+        "university": "浙江大学",
+        "message": "当前收缩版只支持校级研究生招生公告，不支持本科、留学生、继续教育、MBA 或第二学士学位招生。"
+      },
+      "checks": {
+        "intent_ok": true,
+        "validation_ok": true,
+        "university_ok": true
+      },
+      "passed": true,
+      "latency_ms": 0.0392
+    },
+    {
+      "suite": "intent_scope",
+      "case_id": "I17",
+      "query": "采集复旦大学继续教育招生",
+      "expected": {
+        "intent": "crawl_admissions",
+        "valid": false,
+        "university": "复旦大学"
+      },
+      "observed": {
+        "intent": "crawl_admissions",
+        "valid": false,
+        "university": "复旦大学",
+        "message": "当前收缩版只支持校级研究生招生公告，不支持本科、留学生、继续教育、MBA 或第二学士学位招生。"
+      },
+      "checks": {
+        "intent_ok": true,
+        "validation_ok": true,
+        "university_ok": true
+      },
+      "passed": true,
+      "latency_ms": 0.0382
+    },
+    {
+      "suite": "intent_scope",
+      "case_id": "I18",
+      "query": "采集清华大学第二学士学位招生",
+      "expected": {
+        "intent": "crawl_admissions",
+        "valid": false,
+        "university": "清华大学"
+      },
+      "observed": {
+        "intent": "crawl_admissions",
+        "valid": false,
+        "university": "清华大学",
+        "message": "当前收缩版只支持校级研究生招生公告，不支持本科、留学生、继续教育、MBA 或第二学士学位招生。"
+      },
+      "checks": {
+        "intent_ok": true,
+        "validation_ok": true,
+        "university_ok": true
+      },
+      "passed": true,
+      "latency_ms": 0.0389
+    },
+    {
+      "suite": "intent_scope",
+      "case_id": "I19",
+      "query": "查询安徽工业大学研究生招生公告",
+      "expected": {
+        "intent": "search_admissions",
+        "valid": false,
+        "university": "安徽工业大学"
+      },
+      "observed": {
+        "intent": "search_admissions",
+        "valid": false,
+        "university": "安徽工业大学",
+        "message": "默认自动找源只覆盖 C9 高校；非 C9 高校请提供官方首页或研究生招生入口 URL 后再进行受控站内发现。"
+      },
+      "checks": {
+        "intent_ok": true,
+        "validation_ok": true,
+        "university_ok": true
+      },
+      "passed": true,
+      "latency_ms": 0.1059
+    },
+    {
+      "suite": "intent_scope",
+      "case_id": "I20",
+      "query": "查询安徽工业大学研究生招生公告",
+      "expected": {
+        "intent": "search_admissions",
+        "valid": true,
+        "university": "安徽工业大学"
+      },
+      "observed": {
+        "intent": "search_admissions",
+        "valid": true,
+        "university": "安徽工业大学",
+        "message": null
+      },
+      "checks": {
+        "intent_ok": true,
+        "validation_ok": true,
+        "university_ok": true
+      },
+      "passed": true,
+      "latency_ms": 0.3417
+    },
+    {
+      "suite": "evidence_qa",
+      "case_id": "E01",
+      "query": "上海交大硕士复试安排",
+      "expected": {
+        "document_ids": [
+          1
+        ],
+        "refusal": false
+      },
+      "observed": {
+        "document_ids": [
+          1
+        ],
+        "refusal": false,
+        "citation_count": 1,
+        "confidence_notes": [
+          "answer_grounded_in_retrieved_documents",
+          "lightweight_keyword_retrieval"
+        ]
+      },
+      "checks": {
+        "refusal_ok": true,
+        "citations_grounded": true,
+        "recall_at_1": 1.0,
+        "recall_at_3": 1.0,
+        "recall_at_5": 1.0,
+        "reciprocal_rank": 1.0
+      },
+      "passed": true,
+      "latency_ms": 0.1029
+    },
+    {
+      "suite": "evidence_qa",
+      "case_id": "E02",
+      "query": "清华大学博士招生简章",
+      "expected": {
+        "document_ids": [
+          2
+        ],
+        "refusal": false
+      },
+      "observed": {
+        "document_ids": [
+          2,
+          1,
+          4
+        ],
+        "refusal": false,
+        "citation_count": 3,
+        "confidence_notes": [
+          "answer_grounded_in_retrieved_documents",
+          "lightweight_keyword_retrieval"
+        ]
+      },
+      "checks": {
+        "refusal_ok": true,
+        "citations_grounded": true,
+        "recall_at_1": 1.0,
+        "recall_at_3": 1.0,
+        "recall_at_5": 1.0,
+        "reciprocal_rank": 1.0
+      },
+      "passed": true,
+      "latency_ms": 0.1523
+    },
+    {
+      "suite": "evidence_qa",
+      "case_id": "E03",
+      "query": "北大推免夏令营报名",
+      "expected": {
+        "document_ids": [
+          3
+        ],
+        "refusal": false
+      },
+      "observed": {
+        "document_ids": [
+          3
+        ],
+        "refusal": false,
+        "citation_count": 1,
+        "confidence_notes": [
+          "answer_grounded_in_retrieved_documents",
+          "lightweight_keyword_retrieval"
+        ]
+      },
+      "checks": {
+        "refusal_ok": true,
+        "citations_grounded": true,
+        "recall_at_1": 1.0,
+        "recall_at_3": 1.0,
+        "recall_at_5": 1.0,
+        "reciprocal_rank": 1.0
+      },
+      "passed": true,
+      "latency_ms": 0.0916
+    },
+    {
+      "suite": "evidence_qa",
+      "case_id": "E04",
+      "query": "浙江大学研究生调剂通知",
+      "expected": {
+        "document_ids": [
+          4
+        ],
+        "refusal": false
+      },
+      "observed": {
+        "document_ids": [
+          4,
+          1,
+          5,
+          2,
+          3,
+          6
+        ],
+        "refusal": false,
+        "citation_count": 5,
+        "confidence_notes": [
+          "answer_grounded_in_retrieved_documents",
+          "lightweight_keyword_retrieval"
+        ]
+      },
+      "checks": {
+        "refusal_ok": true,
+        "citations_grounded": true,
+        "recall_at_1": 1.0,
+        "recall_at_3": 1.0,
+        "recall_at_5": 1.0,
+        "reciprocal_rank": 1.0
+      },
+      "passed": true,
+      "latency_ms": 0.2394
+    },
+    {
+      "suite": "evidence_qa",
+      "case_id": "E05",
+      "query": "复旦大学拟录取名单",
+      "expected": {
+        "document_ids": [
+          5
+        ],
+        "refusal": false
+      },
+      "observed": {
+        "document_ids": [
+          5
+        ],
+        "refusal": false,
+        "citation_count": 1,
+        "confidence_notes": [
+          "answer_grounded_in_retrieved_documents",
+          "lightweight_keyword_retrieval"
+        ]
+      },
+      "checks": {
+        "refusal_ok": true,
+        "citations_grounded": true,
+        "recall_at_1": 1.0,
+        "recall_at_3": 1.0,
+        "recall_at_5": 1.0,
+        "reciprocal_rank": 1.0
+      },
+      "passed": true,
+      "latency_ms": 0.09
+    },
+    {
+      "suite": "evidence_qa",
+      "case_id": "E06",
+      "query": "哪条公告的报名截止时间是3月25日",
+      "expected": {
+        "document_ids": [
+          3
+        ],
+        "refusal": false
+      },
+      "observed": {
+        "document_ids": [
+          3
+        ],
+        "refusal": false,
+        "citation_count": 1,
+        "confidence_notes": [
+          "answer_grounded_in_retrieved_documents",
+          "lightweight_keyword_retrieval"
+        ]
+      },
+      "checks": {
+        "refusal_ok": true,
+        "citations_grounded": true,
+        "recall_at_1": 1.0,
+        "recall_at_3": 1.0,
+        "recall_at_5": 1.0,
+        "reciprocal_rank": 1.0
+      },
+      "passed": true,
+      "latency_ms": 0.1366
+    },
+    {
+      "suite": "evidence_qa",
+      "case_id": "E07",
+      "query": "2026年研究生招生公告",
+      "expected": {
+        "document_ids": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "refusal": false
+      },
+      "observed": {
+        "document_ids": [
+          1,
+          2,
+          4,
+          5,
+          3
+        ],
+        "refusal": false,
+        "citation_count": 5,
+        "confidence_notes": [
+          "answer_grounded_in_retrieved_documents",
+          "lightweight_keyword_retrieval"
+        ]
+      },
+      "checks": {
+        "refusal_ok": true,
+        "citations_grounded": true,
+        "recall_at_1": 0.2,
+        "recall_at_3": 0.6,
+        "recall_at_5": 1.0,
+        "reciprocal_rank": 1.0
+      },
+      "passed": true,
+      "latency_ms": 0.2238
+    },
+    {
+      "suite": "evidence_qa",
+      "case_id": "E08",
+      "query": "学校食堂今日菜单",
+      "expected": {
+        "document_ids": [],
+        "refusal": true
+      },
+      "observed": {
+        "document_ids": [],
+        "refusal": true,
+        "citation_count": 0,
+        "confidence_notes": [
+          "no_retrieved_documents"
+        ]
+      },
+      "checks": {
+        "refusal_ok": true,
+        "citations_grounded": true,
+        "recall_at_1": 0.0,
+        "recall_at_3": 0.0,
+        "recall_at_5": 0.0,
+        "reciprocal_rank": 0.0
+      },
+      "passed": true,
+      "latency_ms": 0.066
+    },
+    {
+      "suite": "evidence_qa",
+      "case_id": "E09",
+      "query": "校园一卡通充值方式",
+      "expected": {
+        "document_ids": [],
+        "refusal": true
+      },
+      "observed": {
+        "document_ids": [],
+        "refusal": true,
+        "citation_count": 0,
+        "confidence_notes": [
+          "no_retrieved_documents"
+        ]
+      },
+      "checks": {
+        "refusal_ok": true,
+        "citations_grounded": true,
+        "recall_at_1": 0.0,
+        "recall_at_3": 0.0,
+        "recall_at_5": 0.0,
+        "reciprocal_rank": 0.0
+      },
+      "passed": true,
+      "latency_ms": 0.0732
+    },
+    {
+      "suite": "evidence_qa",
+      "case_id": "E10",
+      "query": "本科强基计划招生章程",
+      "expected": {
+        "document_ids": [],
+        "refusal": true
+      },
+      "observed": {
+        "document_ids": [],
+        "refusal": true,
+        "citation_count": 0,
+        "confidence_notes": [
+          "no_retrieved_documents"
+        ]
+      },
+      "checks": {
+        "refusal_ok": true,
+        "citations_grounded": true,
+        "recall_at_1": 0.0,
+        "recall_at_3": 0.0,
+        "recall_at_5": 0.0,
+        "reciprocal_rank": 0.0
+      },
+      "passed": true,
+      "latency_ms": 0.0773
+    }
+  ]
+}

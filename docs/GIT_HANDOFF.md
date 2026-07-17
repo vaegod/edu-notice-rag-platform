@@ -11,7 +11,9 @@
 
 ```powershell
 .\.venv\Scripts\python.exe scripts\migrate_db.py
-.\.venv\Scripts\python.exe -m pytest -q
+.\.venv\Scripts\python.exe -m ruff check .
+.\.venv\Scripts\python.exe -m pytest --cov=app --cov-report=term-missing
+.\.venv\Scripts\python.exe scripts\run_platform_benchmark.py
 ```
 
 ## Boss 演示脚本

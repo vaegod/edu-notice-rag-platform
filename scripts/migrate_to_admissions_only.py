@@ -4,9 +4,8 @@ import json
 from pathlib import Path
 import shutil
 import sys
-from urllib.parse import urlparse
 
-from sqlalchemy import delete, select
+from sqlalchemy import select
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
@@ -18,7 +17,6 @@ from app.core.database import get_session_factory, init_db
 from app.models.document import Document
 from app.models.raw_page import RawPage
 from app.models.source import Source
-from app.models.task import CrawlTask
 from app.services.admissions_taxonomy import ADMISSIONS_DOC_TYPES, ADMISSIONS_KEYWORDS
 from app.services.rule_validation_service import RuleValidationService
 
