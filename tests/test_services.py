@@ -591,6 +591,22 @@ def test_source_discovery_agent_classifies_detail_and_file_pages():
         snippet="招生复试安排",
     ) == "detail_page"
     assert agent._guess_candidate_type(
+        title="2027 graduate admission catalogue",
+        url="https://yzbm.tsinghua.edu.cn/publish/s01/s0103/detail/example/1",
+        snippet="graduate admission",
+    ) == "detail_page"
+    candidate = agent._candidate_from_link(
+        homepage_url="https://admission.pku.edu.cn/index.htm",
+        item={
+            "title": "Graduate admission notices",
+            "url": "/zsxx/bszs/index.htm?CSRFT=temporary-value",
+            "snippet": "Graduate admission notices",
+        },
+        discovery_channel="homepage_nav",
+    )
+    assert candidate is not None
+    assert candidate["source_url"] == "https://admission.pku.edu.cn/zsxx/bszs/index.htm"
+    assert agent._guess_candidate_type(
         title="招生简章 PDF",
         url="https://example.edu.cn/files/brochure.pdf",
         snippet="招生简章附件",

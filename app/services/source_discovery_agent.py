@@ -5,7 +5,7 @@ from datetime import date, datetime
 import re
 from typing import TYPE_CHECKING, Any
 from collections.abc import Callable
-from urllib.parse import urljoin, urlparse, urlunparse
+from urllib.parse import parse_qsl, urlencode, urljoin, urlparse, urlunparse
 
 from bs4 import BeautifulSoup
 from sqlalchemy import select
@@ -1081,7 +1081,7 @@ class SourceDiscoveryAgentService:
         source_url = item.get("url")
         if not isinstance(source_url, str) or not source_url.strip():
             return None
-        absolute_url = urljoin(homepage_url, source_url.strip())
+        absolute_url = self._stable_candidate_url(urljoin(homepage_url, source_url.strip()))
         if not self._is_http_url(absolute_url):
             return None
         if self._registered_domain(homepage_url) != self._registered_domain(absolute_url):
@@ -1158,6 +1158,7 @@ class SourceDiscoveryAgentService:
             return "site_home"
         if (
             re.search(r"/info/\d+", path)
+            or re.search(r"/detail(?:/|$)", path)
             or re.search(r"/article/", path)
             or re.search(r"/content/", path)
             or re.search(r"/f/[^/]+/article/", path)
@@ -1445,9 +1446,20 @@ class SourceDiscoveryAgentService:
     def _normalize_url(self, value: str | None) -> str:
         if not isinstance(value, str) or not value.strip():
             return ""
-        parsed = urlparse(value.strip())
+        parsed = urlparse(self._stable_candidate_url(value.strip()))
         path = parsed.path or "/"
         return urlunparse((parsed.scheme.lower(), parsed.netloc.lower(), path.rstrip("/") or "/", "", parsed.query, ""))
+
+    def _stable_candidate_url(self, value: str) -> str:
+        parsed = urlparse(value)
+        stable_query = urlencode(
+            [
+                (name, item_value)
+                for name, item_value in parse_qsl(parsed.query, keep_blank_values=True)
+                if name.lower() not in {"csrft"}
+            ]
+        )
+        return urlunparse(parsed._replace(query=stable_query, fragment=""))
 
     def _registered_domain(self, value: str | None) -> str:
         host = (urlparse(value or "").hostname or "").lower()
